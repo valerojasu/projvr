@@ -1,0 +1,68 @@
+
+.boton{
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0%;
+    padding: 2%;
+    border-radius: 45%;
+    text-align: center;
+    text-decoration:none;
+    border: none;
+    color: white;
+    font-family: 'Englebert', cursive;
+    background-color: #d6b6fb;
+    cursor: pointer;
+
+}
+.boton:hover{
+    color: #dbee68;
+}
+.App-logo {
+    width: 6%;
+    margin: 2% 0%;
+    pointer-events: none;
+}
+  
+.mainp{
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    margin: 0%;
+    padding: 10% 1% 12%;
+}
+  
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+}
+@keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+
+
+.tit1{
+    color: blueviolet;
+    font-size: 4rem;
+    font-family: 'Englebert', cursive;
+    margin: 0%;
+}
+.tit2{
+    color: white; 
+    font-size: 2rem;
+    margin-bottom: 2%;
+    font-family: 'Englebert', cursive;
+}
+.nombre{
+    color: white; 
+    font-size: 7rem;
+    margin: 1% 0% 2%;
+    font-family: 'Patrick Hand SC', cursive;
+}

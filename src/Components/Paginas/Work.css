@@ -1,0 +1,40 @@
+.workb{
+    width: 100%;
+    padding-top: 5%;
+    background-color: black;
+    color: white;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    text-align: center;
+}
+
+.worktext1{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+.worktext2{
+    font-size: 1.8rem;
+    margin-bottom: 2%;
+}
+
+.cuadritos{
+    border-radius: 30%;
+    background-color: white;
+    padding: 4%;
+    width: 10%;
+    text-align: center;
+    display: flex;
+    margin: 2%;
+    justify-content: center;
+    color: black;
+}
+
+.traba{
+    display: flex;
+    height: 35rem;
+    margin: auto;
+    
+
+}
