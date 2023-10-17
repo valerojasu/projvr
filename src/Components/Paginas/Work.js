@@ -1,5 +1,9 @@
 import React from 'react'
 import './Work.css'
+import lgit from '../../assets/Logos/gitblan.png';
+import logonet from '../../assets/Logos/netlify.png';
+
+
 
 const Work = () => {
   return (
@@ -8,14 +12,14 @@ const Work = () => {
         <h2 className='worktext2'> Aca estan algunos de mis trabajos recientes</h2>
         <section className='traba'>
                 <div className='col cuadritos'>
-                    <h1>CUADRO</h1>
+                    <a href='https://github.com/valerojasu?tab=repositories'>
+                    <img src={lgit} alt='' className='workgit'/>
+                    </a>
                 </div>
                 <div className='col cuadritos'>
-                <h1>CUADRO</h1>
-                </div>
-                <div className='col cuadritos'>
-                <h1>CUADRO</h1>
-                </div>
+                <a href='https://app.netlify.com/teams/valerojasu/overview'>
+                    <img src={logonet} alt='' className='worknet'/>
+                    </a>                </div>
          
             </section>
 

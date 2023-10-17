@@ -1,8 +1,66 @@
 .logov{
-width: 30%;
-margin-left: 15%;
+width: 10%;
 }
 
-nav{
-    background: transparent;
+.container-fluid{
+   
+    display: inline-flex;
+    width: 90%;
+    padding: 2%;
+    color: black;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
 }
+
+
+.nav-link{
+    margin: 2%;
+}
+.menutinav{
+    font-size: 1rem;
+    align-items: center;
+    display: flex;
+    color: black;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0%;
+    padding: 2%;
+    cursor: pointer;
+
+}
+.menutinav:hover{
+    color: #C39BD3;
+    cursor: pointer;
+     
+}
+.menuitem{
+    align-content: center;
+    margin: 0.4%;
+    width: 100%;
+    justify-content: flex-start;
+    display: inline-flex;
+
+}
+
+.iconos{
+    font-size: 2rem;
+    margin: 2%;
+}
+
+@media (max-width: 768px) {
+    .container-fluid {
+      width: 100%;
+      flex-direction: column; /* Cambiar a disposición de columna para dispositivos pequeños */
+    }
+  
+    .nav-link {
+      margin: 1%; /* Ajustar los márgenes para dispositivos pequeños */
+    }
+  
+    .menutinav {
+      font-size: 0.9rem; /* Reducir el tamaño de fuente para dispositivos pequeños */
+    }
+  }

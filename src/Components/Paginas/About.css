@@ -33,9 +33,6 @@
     padding-left: 5%;
 }
 
-
-
-
 .abouttext{
     font-size: 3.5rem;
     font-family: Arial, Helvetica, sans-serif;
@@ -43,9 +40,9 @@
     margin-bottom: 5%;
 }
 
-
 .abouttext2{
-   font-size: 3rem;
+   font-size: 2.5rem;
+   width: 80%;
    font-weight: lighter;
    padding-bottom: 2%;
    text-align: start;
@@ -67,16 +64,202 @@
     width: 100%;
     text-align: center;
     padding-bottom: 4%;
+    font-family: 'Roboto', sans-serif;
 }
 
-.conoci h2{
-   font-size: 1.3rem;
-   font-family: 'Roboto', sans-serif;
+/* RESPONSIVE*/
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    .abouttext {
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    .abouttext2 {
+        font-size: 1.8rem;
+        width: 100%;
+    }
+
+    .aboutparra {
+        font-size: 0.9rem;
+        width: 100%;
+    }
+    .bodyabout{
+        padding: auto;
+        margin: auto;
+        height: auto;
+        font-size: 1.5rem;
+    }
+    .bodyabout2{
+        padding: auto;
+        margin: auto;
+        height: 25rem;
+        font-size: 1.5rem;
+    }
+  
+}
+
+@media screen and (min-width: 100px) and (max-width: 600px) {
+    .bodyabout2{
+        padding: auto;
+        margin: auto;
+        height: 15rem;
+        font-size: 1rem;
+        display: inline-grid;
+    }
+    .bodyabout {
+        padding: auto;
+        margin: auto;
+        height: auto;
+        font-size: 1rem;
+        display: inline-grid;
+
+    }
+  
+
+    .abouttext {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    .abouttext2 {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    .aboutparra {
+        font-size: 0.8rem;
+        width: 100%;
+    }
+
+  
 
 }
 
-img{
-    width: 25%;
-    margin: 2%;
-    justify-content: center;
+
+/*Contacto*/
+.Contactos{
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin: auto;
+    display: flex;
+    padding: 25% 10%;
+    background-color:white;
+    height: 37rem;
+    text-decoration: none;
 }
+
+.encima{
+    font-size: 1.3rem;
+    color: black;
+    text-decoration: none;
+}
+
+.encima:hover{
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.titulo{
+    font-size: 1.6rem;
+
+}
+
+/*work*/
+.WorkExpe{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    padding: 8% 5% 1%;
+    background-color:black;
+    text-decoration: none;
+}
+.WorkExpet1{
+    font-size: 2rem;
+    width: 5%;
+    display: table-cell;
+    align-content: center;
+}
+.WorkExpet{
+    font-size: 3.5rem;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 5%;
+
+}
+.WorkExpet2{
+    width: 60%;
+    font-size: 1.5rem;
+    margin-bottom: 20%;
+    
+}
+
+
+/*RESPONSIVE*/
+
+/* Media Queries para dispositivos más pequeños */
+@media screen and (min-width: 401px) and (max-width: 800px){
+    .Contactos {
+        display: inline-table;
+        height: 25rem;
+    }
+    .WorkExpet1 {
+        width: 80%;
+        font-size: 1rem;
+        display: inline-table;
+    }
+    .WorkExpet{
+        font-size: 2rem;
+    }
+    .WorkExpet2{
+        width: 100%;
+        font-size: 0.8rem;
+        margin-bottom: 10%;
+    }
+
+    .encima {
+        font-size: 1rem;
+       
+    }
+
+    .titulo {
+        font-size: 1rem;
+    }
+}
+
+/* Media Queries para dispositivos aún más pequeños */
+@media screen and (min-width: 100px) and (max-width: 400px){
+    .Contactos {
+        padding: 5% 2%;
+    }
+
+    .number{
+        height: 20rem;
+    }
+    .titulo{
+        font-size: 0.8rem;
+    }
+    .encima{
+        font-size: 0.8rem;
+    }
+    .WorkExpe {
+        padding: 3% 2% 1%;
+    }
+
+    .WorkExpet1 {
+        width: 20%;
+    }
+
+    .WorkExpet {
+        font-size: 2rem;
+    }
+
+    .WorkExpet2 {
+        width: 90%;
+        font-size: 1rem;
+        margin-bottom: 5%;
+    }
+}
+
+

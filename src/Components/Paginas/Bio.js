@@ -1,6 +1,7 @@
 import React from 'react'
 import './Bio.css'
 import './About'
+import foto from '../../assets/foto.jpg';
 
 const Bio = () => {
   return (
@@ -14,6 +15,9 @@ const Bio = () => {
             <p className='bioparra'> Soy egresada de un colegio técnico profesional en el cual obtuve un título en Informática Empresarial, también, cuento con un título universitario de Marketing Digital obtenido en la Universidad America y en proceso de obtener mi titulo de Desarrollador Full Stack en la Universidad Creativa.</p> 
             <p className='bioparra'> Certificada como System Administrator de Service Now</p> 
              
+            </div>
+            <div className='col foto'>
+              <img src={foto} alt=''className='foto'/>
             </div>
            
         </section>

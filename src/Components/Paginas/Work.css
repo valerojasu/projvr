@@ -1,32 +1,37 @@
 .workb{
     width: 100%;
-    padding-top: 5%;
-    background-color: black;
+    padding: 5%;
+    background:  rgba(0, 0, 0, 0.758) url("/src/assets/porta2.jpg");
+    background-position: 0% 50%;
+    background-size:cover;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;    
     color: white;
-    align-items: center;
     font-family: 'Roboto', sans-serif;
+    align-items: center;
     justify-content: center;
     text-align: center;
 }
 
 .worktext1{
-    font-size: 2.5rem;
+    text-align: center;
+    font-size: 4rem;
     font-weight: bold;
     margin-bottom: 2%;
 }
 .worktext2{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-bottom: 2%;
 }
 
 .cuadritos{
     border-radius: 30%;
-    background-color: white;
-    padding: 4%;
+    padding: 0%;
     width: 10%;
     text-align: center;
     display: flex;
     margin: 2%;
+    align-items: center;
     justify-content: center;
     color: black;
 }
@@ -37,4 +42,66 @@
     margin: auto;
     
 
+}
+
+.workgit{
+    width: 45%;
+
+}
+.worknet{
+    width: 60%;
+
+}
+
+/*RESPONSIVE*/
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    .worktext1 {
+        font-size: 3rem;
+    }
+
+    .worktext2 {
+        font-size: 1.2rem;
+    }
+
+    .cuadritos {
+        width: 20%;
+    }
+
+    .traba {
+        flex-direction: row;
+        align-items: center;
+        height: auto;
+        display: flex;
+    }
+
+    .workgit, .worknet {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 100px) and (max-width: 600px) {
+    .worktext1 {
+        font-size: 2rem;
+    }
+
+    .worktext2 {
+        font-size: 0.8rem;
+    }
+
+    .cuadritos {
+        padding: auto;
+        margin: auto;
+    }
+
+    .traba {
+        flex-direction: row;
+        align-items: center;
+        height: auto;
+        display: flex;
+    }
+
+    .workgit, .worknet {
+        width: 30%;
+      
+    }
 }

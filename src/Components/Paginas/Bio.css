@@ -1,11 +1,12 @@
 .bodyb{
     width: 100%;
-    height: 40rem;
+    height: 45rem;
     display: flex;
     color: black;
     justify-content: center;
-    padding-top: 4%;
+    padding-top: 4% 5%;
     text-align: start;
+    align-items: center;
     padding-left: 5%;
   
 }
@@ -25,10 +26,76 @@
 }
 
 .bioparra{
-    font-size: 1.2rem;
-    width: 70%;
+    font-size: 1rem;
+    width: 80%;
+    letter-spacing: 0.1rem;
     text-align: start;
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
 
+}
+
+.foto{
+    width: 70%;
+    margin: 1% 0% 1%;
+    padding: 0%;
+    text-align: center;    
+    align-content: center;
+}
+
+/*RESPONSIVE*/
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    .bodyb {
+        height: auto;
+        width: 100%;
+        margin: 2%;
+    }
+
+    .biotext {
+        font-size: 2rem;
+        
+    }
+
+    .biotext2 {
+        font-size: 1.6rem;
+    }
+
+    .bioparra {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .foto {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 100px) and (max-width: 600px) {
+    .bodyb {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        margin: 2%;
+    }
+
+    .biotext {
+        font-size: 2rem;
+        width: 100%;
+        
+    }
+
+    .biotext2 {
+        font-size: 1.6rem;
+         width: 100%;
+    }
+
+    .bioparra {
+        font-size: 0.8rem;
+        width: 100%;
+    }
+
+    .foto {
+        width: 90%;
+    }
 }

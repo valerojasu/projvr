@@ -1,6 +1,104 @@
 .portada{
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
     width: 100%;
-    background: black;
-    padding: 15% 2%;
+    height: 60rem;
+    background:  rgba(0, 0, 0, 0.758) url("/src/assets/porta2.jpg");
+    background-position: 0% 50%;
+    background-size:auto;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    line-height: 1.8;
+}
+.portatitu{
+    color: #fff;
+    margin: 15% 6% 5%;
+    width: 100%;
+    font-size: 4rem;
+    letter-spacing: 0.1rem;
+    align-content: center;
+    line-height: 1;
+    text-align: left;
+}
+
+/* NAV */
+ 
+.logovm{
+    width: 5%;
+}
+    
+.menutit{
+    font-size: 1rem;
+    align-items: center;
+    display: flex;
     color: white;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0%;
+    cursor: pointer;
+
+}
+.menutit:hover{
+    color: #C39BD3;
+    cursor: pointer;
+     
+}
+
+
+.divi{
+    padding: 0% 9%;
+}
+
+.container-fluid{
+    padding: 2%;
+    display: inline-flex;
+    width: 90%;
+    background: transparent;
+    color: black;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+}
+
+
+@media screen and (min-width: 100px) and (max-width: 899px) {
+
+        
+    .menuitem{
+        font-size: 1rem;
+    }
+    
+    .portatitu {
+        font-size: 2rem;
+        padding-top: 10%;
+        margin: 10% 3% 5%;
+    }
+
+    .portada{
+        height: 30rem; 
+    }
+   
+    
+}
+@media screen and (min-width: 900px) and (max-width: 1000px){
+
+    .menuitem{
+        font-size: 1rem;
+    }
+    .portatitu {
+        padding-top: 15%;
+        font-size: 2.5rem;
+        margin: 10% 3% 5%;
+    }
+
+    .portada{
+        height: 45rem; 
+    
+    }
+   
+   
+    
 }

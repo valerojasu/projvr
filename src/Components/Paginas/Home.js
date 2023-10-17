@@ -1,20 +1,44 @@
 import React from 'react'
 import './Home.css'
-import Navb from '../Navegacion/Navb'
+import '../Navegacion/Navb.css'
 import Bio from './Bio'
 import Conocimientos from '../Paginas/Conocimientos'
 import Work from '../Paginas/Work'
+import Formulario from './Formulario'
+import { Link } from 'react-router-dom'
+import Footerp from '../Paginas/Footerp'
+import v from "../../assets/V/v6.png"
+
+
 
 const Home = () => {
   return (
     <div>
-      <div>
-      <Navb/>
-      </div>
       <div className='portada'>
-        <h1>Hola</h1>
-        <h2>Bienvenido a mi Portafolio</h2>
-        <img src='./src/assest.v.png' alt=''/>
+      <div className="container-fluid">
+      <Link to='/Mainp' >
+          <img src={v}alt="logo" className='logov'/> 
+      </Link>     <ul className="nav">
+      <div className="menuitem">
+   {/* 
+        <li className="nav-item">
+          <Link className="menutit" to='/Home' >Inicio</Link>
+        </li>
+*/}
+     <section className="divi">
+
+     </section>
+            <li className="nav-item">
+              <Link className="menutit" to='/about'>About</Link>
+            </li>
+          </div>
+        
+      </ul> 
+    </div>   
+      <h1 className="portatitu">
+          <strong>HEY HOLA!</strong>
+          <br/>
+         Bienvenido a mi Portafolio</h1> 
       </div>
       <div>
         <Bio/>
@@ -24,6 +48,12 @@ const Home = () => {
       </div>
       <div>
         <Work/>
+      </div>
+      <div>
+        <Formulario/>
+      </div>
+      <div>
+        <Footerp/>
       </div>
       </div>
       
