@@ -156,8 +156,8 @@
 }
 
 .encima:hover{
-    color: white;
-    text-decoration: underline;
+    color: purple;
+    text-decoration: none;
     cursor: pointer;
 }
 

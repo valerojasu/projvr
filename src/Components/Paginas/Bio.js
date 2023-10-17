@@ -26,7 +26,7 @@ const Bio = () => {
         <p className='abouttext2'> ¿Cuál es mi misión?</p>  
         </div>
         <div className='col'>
-        <p className='aboutparra'> Mi misión es presentar posibilidades de desarrollo y diseño innovador poniendo en práctica mis conocimientos y aun más importante, escuchando los deseos y necesidades de mis clientes.</p>                        
+        <p className='aboutparra'> Mi misión es presentar posibilidades de desarrollo y diseño innovador poniendo en práctica mis conocimientos y aun más importante, escuchando los deseos y necesidades de mis futuros clientes.</p>                        
 
         </div>
         </section> 
