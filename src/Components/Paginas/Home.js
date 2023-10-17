@@ -34,11 +34,14 @@ const Home = () => {
           </div>
         
       </ul> 
-    </div>   
-      <h1 className="portatitu">
-          <strong>HEY HOLA!</strong>
+    </div>  
+    <div>
+    <h1 className="portatitu">
+          <strong>HEY, HOLA!</strong>
           <br/>
-         Bienvenido a mi Portafolio</h1> 
+         Bienvenido a mi portafolio </h1>
+      </div> 
+       
       </div>
       <div>
         <Bio/>
