@@ -50,10 +50,21 @@ width: 10%;
     margin: 2%;
 }
 
-@media (max-width: 768px) {
+@media screen and (min-width: 100px) and (max-width: 400px){
+    .container-fluid {
+      margin: 2% 3% 5%; 
+      width: 100%;/* Cambiar a disposición de columna para dispositivos pequeños */
+    }
+  
+  
+    .menutinav {
+      font-size: 0.9rem; /* Reducir el tamaño de fuente para dispositivos pequeños */
+    }
+}
+
+@media screen and (min-width: 402px) and (max-width: 900px){
     .container-fluid {
       width: 100%;
-      flex-direction: column; /* Cambiar a disposición de columna para dispositivos pequeños */
     }
   
     .nav-link {
@@ -63,4 +74,4 @@ width: 10%;
     .menutinav {
       font-size: 0.9rem; /* Reducir el tamaño de fuente para dispositivos pequeños */
     }
-  }
+}

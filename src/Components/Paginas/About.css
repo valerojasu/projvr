@@ -68,7 +68,7 @@
 }
 
 /* RESPONSIVE*/
-@media screen and (min-width: 601px) and (max-width: 900px) {
+@media screen and (min-width: 401px) and (max-width: 900px) {
     .abouttext {
         font-size: 2rem;
         width: 100%;
@@ -98,7 +98,7 @@
   
 }
 
-@media screen and (min-width: 100px) and (max-width: 600px) {
+@media screen and (min-width: 100px) and (max-width: 400px) {
     .bodyabout2{
         padding: auto;
         margin: auto;
@@ -117,18 +117,19 @@
   
 
     .abouttext {
-        font-size: 1.5rem;
+        font-size: 1rem;
         width: 100%;
     }
 
     .abouttext2 {
-        font-size: 1.5rem;
+        font-size: 1rem;
+        margin: 1% 0%;
         width: 100%;
     }
 
     .aboutparra {
         font-size: 0.8rem;
-        width: 100%;
+        width: 90%;
     }
 
   
@@ -232,33 +233,31 @@
 @media screen and (min-width: 100px) and (max-width: 400px){
     .Contactos {
         padding: 5% 2%;
+        height: auto;
+    }
+    .WorkExpet1 {
+        width: 80%;
+        font-size: 0.8rem;
+        display: inline-table;
+    }
+    .WorkExpet{
+        font-size: 1rem;
+    }
+    .WorkExpet2{
+        width: 100%;
+        font-size: 0.8rem;
+        margin-bottom: 10%;
     }
 
-    .number{
-        height: 20rem;
-    }
-    .titulo{
-        font-size: 0.8rem;
-    }
+
     .encima{
         font-size: 0.8rem;
     }
-    .WorkExpe {
-        padding: 3% 2% 1%;
-    }
 
-    .WorkExpet1 {
-        width: 20%;
-    }
-
-    .WorkExpet {
-        font-size: 2rem;
-    }
-
-    .WorkExpet2 {
-        width: 90%;
-        font-size: 1rem;
-        margin-bottom: 5%;
+    
+    .titulo{
+        font-size: 0.8rem;
+    
     }
 }
 
