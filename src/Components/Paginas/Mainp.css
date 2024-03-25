@@ -1,0 +1,146 @@
+
+.boton{
+    font-size: 2rem;
+    margin: 0%;
+    padding: 2%;
+    border-radius: 45%;
+    text-decoration:none;
+    border: none;
+    color: white;
+    font-family: 'Englebert', cursive;
+    cursor: pointer;
+
+}
+.boton:hover{
+    color: #dbee68;
+}
+
+.App-logo {
+    width: 6%;
+    margin: 2% 0%;
+    pointer-events: none;
+}
+  
+.mainp{
+    background-color: black;
+    width: 100%;
+    color: white; 
+    height: 70rem;
+    text-align: center;
+    align-content: center;
+    margin: 0%;
+    padding: 10% 1% 12%;
+}
+  
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+}
+@keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+
+
+.tit1{
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Englebert', cursive;
+    margin: 0%;
+    
+}
+.tit2{
+    font-size: 2rem;
+    margin: 2%;
+    font-family: 'Englebert', cursive;
+}
+.nombre{
+    color: white; 
+    font-size: 7rem;
+    margin: 0%;
+    font-family: 'PT Sans', sans-serif;
+}
+
+@media screen and (min-width: 100px) and (max-width: 400px) {
+
+        
+    .boton{
+        font-size: 1.5rem;
+    
+    }
+   
+    
+    .App-logo {
+        width: 7%;
+    } 
+      
+    .mainp{
+        height: 50rem;
+    
+    }
+        
+    .tit1{
+        font-size: 1rem;
+        text-align: center;
+        font-family: 'Englebert', cursive;
+        margin: 0%;
+        
+    }
+    .tit2{
+        font-size: 1rem;
+        margin: 2%;
+        font-family: 'Englebert', cursive;
+    }
+    .nombre{
+        display:flow-root;
+        align-items: center;
+        font-size: 1.6rem;
+       
+    }
+   
+    
+}
+@media screen and (min-width: 401px) and (max-width: 750px){
+
+    .boton{
+        font-size: 2rem;
+    
+    }
+   
+    
+    .App-logo {
+        width: 8%;
+    } 
+      
+    .mainp{
+        height: 40rem;
+    }
+        
+    .tit1{
+        font-size: 1.5rem;
+        text-align: center;
+        font-family: 'Englebert', cursive;
+        margin: 0%;
+        
+    }
+    .tit2{
+        font-size: 1.5rem;
+        margin: 2%;
+        font-family: 'Englebert', cursive;
+    }
+    .nombre{
+        display:flow-root;
+        align-items: center;
+        font-size: 3rem;
+       
+    }
+   
+   
+    
+}

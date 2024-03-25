@@ -1,0 +1,77 @@
+.logov{
+width: 10%;
+}
+
+.container-fluid{
+   
+    display: inline-flex;
+    width: 90%;
+    padding: 2%;
+    color: black;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+}
+
+
+.nav-link{
+    margin: 2%;
+}
+.menutinav{
+  font-size: 1.2rem;
+    align-items: center;
+    display: flex;
+    color :#741638;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0%;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+.menutinav:hover{
+  color: #bf2142;
+  cursor: pointer;  
+     
+}
+.menuitem{
+    align-content: center;
+    margin: 0.4%;
+    width: 100%;
+    justify-content: flex-start;
+    display: inline-flex;
+
+}
+
+.iconos{
+    font-size: 2rem;
+    margin: 2%;
+}
+
+@media screen and (min-width: 100px) and (max-width: 400px){
+    .container-fluid {
+      margin: 2% 3% 5%; 
+      width: 100%;/* Cambiar a disposición de columna para dispositivos pequeños */
+    }
+  
+  
+    .menutinav {
+      font-size: 0.9rem; /* Reducir el tamaño de fuente para dispositivos pequeños */
+    }
+}
+
+@media screen and (min-width: 402px) and (max-width: 900px){
+    .container-fluid {
+      width: 100%;
+    }
+  
+    .nav-link {
+      margin: 1%; /* Ajustar los márgenes para dispositivos pequeños */
+    }
+  
+    .menutinav {
+      font-size: 0.9rem; /* Reducir el tamaño de fuente para dispositivos pequeños */
+    }
+}

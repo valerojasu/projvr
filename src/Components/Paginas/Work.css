@@ -1,0 +1,102 @@
+.workb{
+    width: 100%;
+    padding: 4%;
+    background:  rgba(0, 0, 0, 0.729) url("/src/assets/Port3.jpg");
+    background-position: 0% 0%;
+    background-size:cover;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;    
+    color: white;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.worktext2{
+    font-size: 2rem;
+    font-weight: 100;
+    margin: 13% 0%;
+}
+
+.cuadritos{
+    border-radius: 30%;
+    padding: 0%;
+    width: 10%;
+    text-align: center;
+    display: flex;
+    margin: 2%;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.traba{
+    display: flex;
+    height: 35rem;
+    margin: auto;
+    
+
+}
+
+.workgit{
+    width: 45%;
+
+}
+.worknet{
+    width: 60%;
+
+}
+
+/*RESPONSIVE*/
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    .worktext1 {
+        font-size: 3rem;
+    }
+
+    .worktext2 {
+        font-size: 1.2rem;
+    }
+
+    .cuadritos {
+        width: 20%;
+    }
+
+    .traba {
+        flex-direction: row;
+        align-items: center;
+        height: auto;
+        display: flex;
+    }
+
+    .workgit, .worknet {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 100px) and (max-width: 600px) {
+    .worktext1 {
+        font-size: 2rem;
+    }
+
+    .worktext2 {
+        font-size: 0.8rem;
+    }
+
+    .cuadritos {
+        padding: auto;
+        margin: auto;
+    }
+
+    .traba {
+        flex-direction: row;
+        align-items: center;
+        height: auto;
+        display: flex;
+    }
+
+    .workgit, .worknet {
+        width: 30%;
+      
+    }
+}

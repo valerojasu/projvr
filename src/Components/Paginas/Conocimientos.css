@@ -1,0 +1,71 @@
+.loguitos{
+    width: 20%;
+    margin: 2%;
+    justify-content: center;
+}
+
+.conotext{
+  font-size: 2rem;
+   width: 70%;
+   font-weight: 400;
+   padding-bottom: 2%;
+   text-align: start;
+
+}
+
+.conop{
+    font-size: 1.8rem;
+   padding-bottom: 2%;
+   text-align: center;
+   font-weight: 200;
+
+
+}
+
+/* RESPONSIVE*/
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  
+
+    .conotext {
+        font-size: 1.3rem;
+        width: 100%;
+    }
+
+    .conop{
+        font-size: 1.3rem;
+    }
+    
+
+    .bodyaboutcono {
+        margin: auto;
+        padding: auto;
+        text-align: center;  
+
+    }
+  
+}
+
+@media screen and (min-width: 100px) and (max-width: 600px) {
+  
+    .bodyaboutcono {
+        margin: auto;
+        padding: auto;
+        height: auto;
+        display:flow-root;
+        text-align: center; 
+        align-items: center; 
+
+    }
+    .conop{
+        font-size: 0.8rem;
+    }
+
+    .conotext {
+        font-size: 1.2rem;
+        width: 100%;
+        text-align: center;
+    }
+
+  
+
+}
