@@ -1,12 +1,19 @@
 .workb{
     width: 100%;
+<<<<<<< HEAD
     padding: 5%;
     background:  rgba(0, 0, 0, 0.758) url("/src/assets/porta5.jpg");
     background-position: 0% 50%;
+=======
+    padding: 4%;
+    background:  rgba(0, 0, 0, 0.729) url("/src/assets/Port3.jpg");
+    background-position: 0% 0%;
+>>>>>>> eca353f (Agregar archivos iniciales)
     background-size:cover;
     background-blend-mode: darken;
     background-repeat: no-repeat;    
     color: white;
+<<<<<<< HEAD
     font-family: 'Roboto', sans-serif;
     align-items: center;
     justify-content: center;
@@ -22,6 +29,18 @@
 .worktext2{
     font-size: 1.5rem;
     margin-bottom: 2%;
+=======
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.worktext2{
+    font-size: 2rem;
+    font-weight: 100;
+    margin: 13% 0%;
+>>>>>>> eca353f (Agregar archivos iniciales)
 }
 
 .cuadritos{

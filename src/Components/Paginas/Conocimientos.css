@@ -7,10 +7,15 @@
 .conotext{
   font-size: 2rem;
    width: 70%;
+<<<<<<< HEAD
    font-family: 'Roboto', sans-serif;
    font-weight: lighter;
    padding-bottom: 2%;
    font-weight: lighter;
+=======
+   font-weight: 400;
+   padding-bottom: 2%;
+>>>>>>> eca353f (Agregar archivos iniciales)
    text-align: start;
 
 }
@@ -18,8 +23,14 @@
 .conop{
     font-size: 1.8rem;
    padding-bottom: 2%;
+<<<<<<< HEAD
    font-family: 'Roboto', sans-serif;
    text-align: center;
+=======
+   text-align: center;
+   font-weight: 200;
+
+>>>>>>> eca353f (Agregar archivos iniciales)
 
 }
 

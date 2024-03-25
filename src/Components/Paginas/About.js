@@ -1,8 +1,15 @@
 import React from 'react'
 import './About.css'
+<<<<<<< HEAD
 import Navb from '../Navegacion/Navb'
 import Conocimientos from '../Paginas/Conocimientos'
 import fotob from '../../assets/foto.jpg';
+=======
+import './Bio.css'
+import Navb from '../Navegacion/Navb'
+import Conocimientos from '../Paginas/Conocimientos'
+import foto from '../../assets/foto.jpeg';
+>>>>>>> eca353f (Agregar archivos iniciales)
 import Footerp from '../Paginas/Footerp'
 
 
@@ -14,17 +21,31 @@ function About() {
       </div>
       <div>
       <section className='bodyabout'>
+<<<<<<< HEAD
             <div className='col biotext'>
             <h1 className='abouttext2'> ¿Quién es </h1>
             <h2 className='abouttext'> Valeria Rojas?</h2>
             <p className='aboutparra'> Soy egresada de un colegio técnico profesional en el cual obtuve un título en Informática Empresarial, también, cuento con un título universitario de Marketing Digital obtenido en la Universidad America y en proceso de obtener mi titulo de Desarrollador Full Stack en la Universidad Creativa.</p> 
             <p className='aboutparra'> Certificada como System Administrator de Service Now</p> 
+=======
+            <div className='col'>
+            <h1 className='abouttext2'> ¿Quién es
+            <br/> <strong className='nombc'>Valeria Rojas? </strong> </h1>
+            <p className='aboutparra'> Soy egresada de un colegio técnico profesional en el cual obtuve un título en <strong> Informática Empresarial </strong>, también, cuento con un título universitario de <strong> Marketing Digital </strong>  obtenido en la Universidad Americana y graduada como <strong> Desarrollador Full Stack </strong>  en la Universidad Creativa de Costa Rica.</p> 
+            <p className='aboutparra'> Certificada como <strong> System Administrator de ServiceNow </strong></p> 
+>>>>>>> eca353f (Agregar archivos iniciales)
             <p className='aboutparra'> Nací en 1998, en San José, Costa Rica.</p>  
             <p className='aboutparra'> Cuando no estoy en frente de la computadora, me encanta hacer ejercicio, salir a comer a un buen restaurante, pasar tiempo de calidad con mi familia y mis perritos.</p>  
 
             </div>  
+<<<<<<< HEAD
             <div className='col'>
             <img src={fotob} alt=''className='foto'/>
+=======
+           
+            <div className='col'>
+            <img src={foto} alt=''className='foto'/>
+>>>>>>> eca353f (Agregar archivos iniciales)
             </div> 
         </section>
     

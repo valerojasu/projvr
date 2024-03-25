@@ -1,17 +1,28 @@
 .bodyabout{
     width: 100%;
+<<<<<<< HEAD
     height: 45rem;
     display: flex;
     color: black;
     justify-content: center;
     align-items: center;
     text-align: start;
+=======
+    display: flex;
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+>>>>>>> eca353f (Agregar archivos iniciales)
     padding-left: 5%;
   
 }
 .bodyabout2{
     width: 100%;
     height: 35rem;
+<<<<<<< HEAD
+=======
+    text-transform: uppercase;
+>>>>>>> eca353f (Agregar archivos iniciales)
     display: flex;
     background-color: black;
     color: white;
@@ -27,12 +38,20 @@
     height: 40rem;
     padding-top: 2%;
     display: flex;
+<<<<<<< HEAD
     color: black;
     justify-content: center;
+=======
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    justify-content: center;
+    text-transform: uppercase;
+>>>>>>> eca353f (Agregar archivos iniciales)
     align-items: center;
     padding-left: 5%;
 }
 
+<<<<<<< HEAD
 .abouttext{
     font-size: 3.5rem;
     font-family: Arial, Helvetica, sans-serif;
@@ -45,13 +64,25 @@
    width: 80%;
    font-weight: lighter;
    padding-bottom: 2%;
+=======
+.abouttext2{
+   font-size: 3rem;
+   width: 100%;
+   text-transform: uppercase;
+   font-family: Arial, Helvetica, sans-serif;
+   padding-bottom: 4%;
+>>>>>>> eca353f (Agregar archivos iniciales)
    text-align: start;
 
 }
 
 .aboutparra{
     font-size: 1.2rem;
+<<<<<<< HEAD
     width: 70%;
+=======
+    width: 100%;
+>>>>>>> eca353f (Agregar archivos iniciales)
     text-align: start;
     font-family: 'Roboto', sans-serif;
     font-weight: normal;

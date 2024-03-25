@@ -19,21 +19,37 @@ width: 10%;
     margin: 2%;
 }
 .menutinav{
+<<<<<<< HEAD
     font-size: 1rem;
     align-items: center;
     display: flex;
     color: black;
+=======
+  font-size: 1.2rem;
+    align-items: center;
+    display: flex;
+    color :#741638;
+>>>>>>> eca353f (Agregar archivos iniciales)
     letter-spacing: 0.1rem;
     text-transform: uppercase;
     text-decoration: none;
     margin: 0%;
+<<<<<<< HEAD
     padding: 2%;
+=======
+    font-weight: 500;
+>>>>>>> eca353f (Agregar archivos iniciales)
     cursor: pointer;
 
 }
 .menutinav:hover{
+<<<<<<< HEAD
     color: #C39BD3;
     cursor: pointer;
+=======
+  color: #bf2142;
+  cursor: pointer;  
+>>>>>>> eca353f (Agregar archivos iniciales)
      
 }
 .menuitem{
