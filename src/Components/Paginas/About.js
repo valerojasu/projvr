@@ -1,16 +1,11 @@
 import React from 'react'
 import './About.css'
-<<<<<<< HEAD
-import Navb from '../Navegacion/Navb'
-import Conocimientos from '../Paginas/Conocimientos'
-import fotob from '../../assets/foto.jpg';
-=======
 import './Bio.css'
 import Navb from '../Navegacion/Navb'
 import Conocimientos from '../Paginas/Conocimientos'
-import foto from '../../assets/foto.jpeg';
->>>>>>> eca353f (Agregar archivos iniciales)
 import Footerp from '../Paginas/Footerp'
+import { Container, Row, Col } from 'react-bootstrap';
+
 
 
 function About() {
@@ -19,35 +14,28 @@ function About() {
       <div>
       <Navb/>
       </div>
-      <div>
-      <section className='bodyabout'>
-<<<<<<< HEAD
-            <div className='col biotext'>
-            <h1 className='abouttext2'> ¿Quién es </h1>
-            <h2 className='abouttext'> Valeria Rojas?</h2>
-            <p className='aboutparra'> Soy egresada de un colegio técnico profesional en el cual obtuve un título en Informática Empresarial, también, cuento con un título universitario de Marketing Digital obtenido en la Universidad America y en proceso de obtener mi titulo de Desarrollador Full Stack en la Universidad Creativa.</p> 
-            <p className='aboutparra'> Certificada como System Administrator de Service Now</p> 
-=======
+      <Container>
+      <Row>
+      <Col sm={6} className="bodyabout">
             <div className='col'>
             <h1 className='abouttext2'> ¿Quién es
             <br/> <strong className='nombc'>Valeria Rojas? </strong> </h1>
             <p className='aboutparra'> Soy egresada de un colegio técnico profesional en el cual obtuve un título en <strong> Informática Empresarial </strong>, también, cuento con un título universitario de <strong> Marketing Digital </strong>  obtenido en la Universidad Americana y graduada como <strong> Desarrollador Full Stack </strong>  en la Universidad Creativa de Costa Rica.</p> 
             <p className='aboutparra'> Certificada como <strong> System Administrator de ServiceNow </strong></p> 
->>>>>>> eca353f (Agregar archivos iniciales)
             <p className='aboutparra'> Nací en 1998, en San José, Costa Rica.</p>  
             <p className='aboutparra'> Cuando no estoy en frente de la computadora, me encanta hacer ejercicio, salir a comer a un buen restaurante, pasar tiempo de calidad con mi familia y mis perritos.</p>  
 
             </div>  
-<<<<<<< HEAD
-            <div className='col'>
-            <img src={fotob} alt=''className='foto'/>
-=======
-           
-            <div className='col'>
-            <img src={foto} alt=''className='foto'/>
->>>>>>> eca353f (Agregar archivos iniciales)
-            </div> 
-        </section>
+            </Col>
+            <Col sm= {6}>
+            
+            <img src={require ('../../assets/fotoportada.png')} alt='' className='fotop'/>
+            
+            </Col>
+            
+        
+        </Row>
+        </Container>\
     
         <section className='bodyabout2'> 
         <div className='col'>
@@ -58,76 +46,86 @@ function About() {
 
         </div>
         </section>
+        
         <section>
           <Conocimientos/>
         </section>
       
-        <section>
-        <section className='WorkExpe'>
+        <Container className='contenedor'>
+        <Row>
+        <Col sm={10}>
             <h1 className='WorkExpet'> ACADEMIC BACKGROUND</h1>
+
+            </Col>
+        <section className='WorkExpe'>
+            
+
             <div>
-            <aside className='col WorkExpet1'>
-                <div className='col'>
+            <Col sm={4}>
+                <Col>
                 <h2 className='WorkExpet1'><strong>2023</strong></h2>
-                </div>
-                <div className='col'>
+                </Col>
+                <Col >
                 <h2 className='WorkExpet1'><strong>ServiceNow</strong></h2>
                 <h3 className='WorkExpet2'>Certificated ServiceNow Administrator</h3>
-                </div>  
-            </aside>
-            <aside className='col WorkExpet1'>
-                <div className='col'>
-                <h2 className='WorkExpet1'><strong>2022-2023</strong></h2>
-                </div>
-                <div className='col'>
-                <h2 className='WorkExpet1'><strong>Universidad Creativa</strong></h2>
-                <h3 className='WorkExpet2'>Technical University Degreed in Full Stack Developer</h3>
-                </div>  
-            </aside>
-            <aside className='col WorkExpet1'>
-                <div className='col'>
+                </Col>  
+            </Col>
+           
+            <Col sm={4}>
+                <Col >
                 <h2 className='WorkExpet1'><strong>2020 - 2021</strong></h2>
-                </div>
-                <div className='col'>
+                </Col>
+                <Col>
                 <h2 className='WorkExpet1'><strong>INTENSA</strong></h2>
                 <h3 className='WorkExpet2'>Intensive English Course</h3>
-                </div>  
-            </aside>
-            <aside className='col WorkExpet1'>
-                <div >
+                </Col>  
+            </Col>
+            <Col sm={4}>
+                <Col >
                 <h2 className='WorkExpet1'><strong>2019 - 2020</strong></h2>
-                </div>
-                <div className='col'>
+                </Col>
+                <Col>
                 <h2 className='WorkExpet1'><strong>Universidad Americana</strong></h2>
                 <h3 className='WorkExpet2'>University Degree in Digital Marketing</h3>
-                </div>  
-            </aside>
+                </Col>  
+                </Col>
             </div>
-            <aside className='WorkExpet1'>
-                <div className='col'>
+        <Row>
+
+        </Row>
+            <Col sm={6}>
+                <Col>
                 <h2 className='WorkExpet1'><strong>2022-2023</strong></h2>
-                </div>
-                <div className='col'>
+                </Col>
+                <Col>
                 <h2 className='WorkExpet1'><strong>Professional Technical Collage of Santo Domingo</strong></h2>
                 <h3 className='WorkExpet2'>Degree in Business Informatics</h3>
-                </div>  
-            </aside>
-           
-
-        </section>
-        </section>
+                </Col>  
+            </Col>
+            <Col s={6}>
+                <Col>
+                <h2 className='WorkExpet1'><strong>2022-2023</strong></h2>
+                </Col>
+                <Col >
+                <h2 className='WorkExpet1'><strong>Universidad Creativa</strong></h2>
+                <h3 className='WorkExpet2'>Technical University Degreed in Full Stack Developer</h3>
+                </Col>  
+            </Col>
+            </section>   
+        </Row>
+        </Container>
         <section>
         <section class="Contactos">
-            <aside class="container">
+            <Col class="container">
                 <section class="row">
                     <div class="col">
                         <p class="titulo">Contáctenos a nuestro WhatsApp</p>    
                         <p class="encima" href="https://api.whatsapp.com/send?phone=50683105640&text= Hola!%20Quiero%20contratar%20sus%20servicios!"> 83105640</p>
                     </div>
                 </section>
-            </aside>
+            </Col>
     
-            <aside class="container">
+            <Col class="container">
                 <section class="row">
                     
                         <div class="col">
@@ -135,7 +133,7 @@ function About() {
                         <a href="mailto:sudisplay@gmail.com" class="encima">valerojasu98@hotmail.com</a>                        
                     </div>
                 </section>
-            </aside>
+            </Col>
            
         </section>
         </section>
@@ -147,7 +145,7 @@ function About() {
         
         
       </div>
-    </div>
+    
   )
 }
 
