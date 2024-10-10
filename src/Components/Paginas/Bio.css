@@ -48,6 +48,7 @@
 
 .foto{
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 70%;
     margin: 1% 0% 1%;
     padding: 0%;
@@ -59,15 +60,27 @@
     padding: 0%;
     margin: 4%;
 >>>>>>> eca353f (Agregar archivos iniciales)
+=======
+    max-width: 56%;
+    height: auto;
+    float: center;
+    padding: 0%;
+    margin: 0% 4%;
+>>>>>>> c948b9e (fist commnet)
 }
 
 /*RESPONSIVE*/
 
-@media screen and (min-width: 601px) and (max-width: 900px) {
+@media screen and (min-width: 601px) and (max-width: 1500px) {
     .bodyb {
         height: auto;
         width: 100%;
         margin: 2%;
+    }
+    .foto{
+        max-width: 90%;
+        height: auto;
+    
     }
 
     .biotext {
@@ -77,6 +90,9 @@
 
     .biotext2 {
         font-size: 1.6rem;
+    }
+    .colt{
+        width: 100%;
     }
 
     .bioparra {
