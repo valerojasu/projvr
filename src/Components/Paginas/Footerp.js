@@ -7,19 +7,16 @@ const Footerp = () => {
     <div className="container">
         <div className="row">
             <div className="col-5">
-<<<<<<< HEAD
                 <h4 className="textof">Copyright @2023 - Created by Valeria Rojas</h4>
             </div>
     
             <div className="col">
                 <h4 className="textof" href="mailto:valerojasu98@hotmail.com">Contáctenos</h4>                        
-=======
                 <h4 className="textof">Copyright @2024 - Created by SVRJS</h4>
             </div>
     
             <div className="col">
                 <h4 className="textof" href="mailto:valerojasu98@hotmail.com">Contácteme</h4>                        
->>>>>>> eca353f (Agregar archivos iniciales)
             </div>  
             <div className='col'>
                 <div className='iconosf'>

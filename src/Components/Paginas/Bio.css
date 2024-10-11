@@ -8,11 +8,6 @@
     text-align: start;
     align-items: center;
     padding-left: 5%;
-<<<<<<< HEAD
-  
-}
-
-=======
     text-transform: uppercase;
   
 }
@@ -21,7 +16,6 @@
     color: #931739;
     font-weight:bold;
 }
->>>>>>> eca353f (Agregar archivos iniciales)
 
 .biotext{
     font-size: 3.5rem;
@@ -47,26 +41,21 @@
 }
 
 .foto{
-<<<<<<< HEAD
-<<<<<<< HEAD
     width: 70%;
     margin: 1% 0% 1%;
     padding: 0%;
     text-align: center;    
     align-content: center;
-=======
     max-width: 70%;
     float: center;
     padding: 0%;
     margin: 4%;
->>>>>>> eca353f (Agregar archivos iniciales)
-=======
+
     max-width: 56%;
     height: auto;
     float: center;
     padding: 0%;
     margin: 0% 4%;
->>>>>>> c948b9e (fist commnet)
 }
 
 /*RESPONSIVE*/
@@ -100,12 +89,9 @@
         width: 100%;
     }
 
-<<<<<<< HEAD
     .foto {
         width: 90%;
     }
-=======
->>>>>>> eca353f (Agregar archivos iniciales)
 }
 
 @media screen and (min-width: 100px) and (max-width: 600px) {
@@ -132,11 +118,8 @@
         width: 100%;
     }
 
-<<<<<<< HEAD
     .foto {
         width: 90%;
     }
-=======
 
->>>>>>> eca353f (Agregar archivos iniciales)
 }

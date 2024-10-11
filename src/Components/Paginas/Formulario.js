@@ -54,11 +54,7 @@ class Formulario extends Component {
           <section className="container">
           <div className="row">
             <div className="col-12">
-<<<<<<< HEAD
                 <label className="form-label titulitos">Cuentenos de su proyecto</label>
-=======
-                <label className="form-label titulitos">Cuénteme de su proyecto</label>
->>>>>>> eca353f (Agregar archivos iniciales)
                 <textarea type="text" name="comment" className="form-control" rows="3" placeholder="Ingrese su mensaje"></textarea>
               </div>
           </div>

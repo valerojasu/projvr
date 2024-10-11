@@ -37,18 +37,9 @@ const Home = () => {
     </div>  
     <div>
     <h1 className="portatitu">
-<<<<<<< HEAD
           <strong>HEY, HOLA!</strong>
           <br/>
          Bienvenido a mi portafolio </h1>
-=======
-          HEY, HOLA!
-          <br/>
-          <strong className='portaname'>SOY VALERIA</strong>
-         <br/> UNA DESAROLLADORA  <strong>FULL STACK</strong> </h1>
-         
-         
->>>>>>> eca353f (Agregar archivos iniciales)
       </div> 
        
       </div>

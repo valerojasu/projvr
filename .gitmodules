@@ -1,0 +1,3 @@
+[submodule "projvr"]
+	path = projvr
+	url = https://github.com/valerojasu/projvr.git
