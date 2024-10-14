@@ -1,110 +1,103 @@
-.portada{
+/* Portada */
+.portada {
     position: relative;
-    z-index: 2;
+    z-index: 1;
     overflow: hidden;
     width: 100%;
-    height: 65rem;
-    background:  rgba(0, 0, 0, 0.218) url("/src/assets/Port1.jpg");
-    background-position: 0% 50%;
-    background-size:cover;
-    background-blend-mode: darken;
+    height: 100vh; /* Asegura que la altura siempre sea 100vh */
+    background: rgba(0, 0, 0, 0.5) url("/src/assets/Port1.jpg");
+    background-position: center;
+    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
     background-repeat: no-repeat;
-    line-height: 1.8;
 }
-.portatitu{
+
+/* Centrado de título en la portada */
+.portatitu {
+    position: absolute;
+    top: 50%; /* Centrado vertical */
+    left: 20%; /* Centrado horizontal */
+    transform: translate(-50%, -50%); /* Ajuste para un perfecto centro */
     color: #fff;
-    margin: 15% 6% 2%;
-    width: 100%;
-    font-size: 5rem;
-    letter-spacing: 0.1rem;
-    align-content: center;
-    line-height: 1;
-    text-align: left;
+    font-size: 4.3rem; /* Tamaño flexible del texto */
+    text-align: left; /* Centrado del texto */
+    margin: 0;
 }
 
-
-/* NAV */
- 
-.logovm{
-    width: 5%;
+/* Navbar */
+.logov {
+    height: 40px;  /* Asegura que el logo tenga el mismo tamaño que en Navb.js */
 }
-    
-.menutit{
+
+.menutit {
     font-size: 1.2rem;
-    align-items: center;
-    display: flex;
     font-weight: bold;
     color: white;
-    font-size: 1.2rem;
-    align-items: center;
-    display: flex;
-    color : white;
     letter-spacing: 0.1rem;
     text-transform: uppercase;
     text-decoration: none;
-    margin: 0%;
+    margin-top: 20%;
+    margin-right: 40%;
     cursor: pointer;
-
+    display: flex;
+    align-items: center;
 }
-.menutit:hover{
+
+.menutit:hover {
     color: #C39BD3;
     cursor: pointer;
-     
 }
 
-
-.divi{
+.divi {
     padding: 0% 9%;
 }
 
-.container-fluid{
+.container-fluid {
     padding: 2%;
-    display: inline-flex;
-    width: 90%;
+    display: flex;  /* Usamos flexbox para que se alinee igual que en Navb.js */
+    justify-content: space-between;  /* Asegura el espaciado entre los elementos */
+    align-items: center; /* Alinea los elementos verticalmente */
+    width: 100%;  /* Asegura que el contenedor ocupe todo el ancho */
     background: transparent;
     color: black;
-    flex-wrap: inherit;
-    align-items: center;
-    justify-content: space-between;
-    align-content: center;
 }
 
-
-@media screen and (min-width: 100px) and (max-width: 899px) {
-
-        
-    .menuitem{
-        font-size: 1rem;
+/* Responsive Design */
+@media screen and (max-width: 899px) {
+    .portada {
+        height: 100vh; /* Mantener la altura completa en móviles */
     }
-    
+
+    /* Ajuste del tamaño del texto en pantallas pequeñas */
     .portatitu {
-        font-size: 2rem;
+        font-size: 6vw; /* Ajusta el tamaño dinámicamente */
         padding-top: 10%;
-        margin: 10% 3% 5%;
     }
 
-    .portada{
-        height: 30rem; 
+    .menutit {
+        font-size: 1rem; /* Ajuste del tamaño de fuente del navbar */
     }
-   
-    
 }
-@media screen and (min-width: 900px) and (max-width: 1000px){
 
-    .menuitem{
-        font-size: 1rem;
-    }
+@media screen and (min-width: 900px) and (max-width: 1000px) {
     .portatitu {
+        font-size: 5vw; /* Ajusta el tamaño del texto */
         padding-top: 15%;
-        font-size: 2.5rem;
-        margin: 10% 3% 5%;
     }
 
-    .portada{
-        height: 45rem; 
-    
+    .portada {
+        height: 100vh; /* Mantener la altura completa */
     }
-   
-   
-    
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1400px){
+    .portatitu {
+        font-size: 3.4rem; /* Tamaño fijo más grande */
+        padding-top: 15%;
+        left: 32%; /* Centrado horizontal */
+
+    }
+
+    .portada {
+        height: 100vh; /* Mantener la portada a 100vh para pantallas grandes */
+    }
 }

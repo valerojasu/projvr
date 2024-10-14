@@ -1,152 +1,86 @@
 import React from 'react'
 import './About.css'
-import './Bio.css'
 import Navb from '../Navegacion/Navb'
-import Conocimientos from '../Paginas/Conocimientos'
 import Footerp from '../Paginas/Footerp'
 import { Container, Row, Col } from 'react-bootstrap';
-
-
 
 function About() {
   return (
     <div>
-      <div>
-      <Navb/>
-      </div>
-      <Container>
-      <Row>
-      <Col sm={6} className="bodyabout">
-            <div className='col'>
-            <h1 className='abouttext2'> ¿Quién es
-            <br/> <strong className='nombc'>Valeria Rojas? </strong> </h1>
-            <p className='aboutparra'> Soy egresada de un colegio técnico profesional en el cual obtuve un título en <strong> Informática Empresarial </strong>, también, cuento con un título universitario de <strong> Marketing Digital </strong>  obtenido en la Universidad Americana y graduada como <strong> Desarrollador Full Stack </strong>  en la Universidad Creativa de Costa Rica.</p> 
-            <p className='aboutparra'> Certificada como <strong> System Administrator de ServiceNow </strong></p> 
-            <p className='aboutparra'> Nací en 1998, en San José, Costa Rica.</p>  
-            <p className='aboutparra'> Cuando no estoy en frente de la computadora, me encanta hacer ejercicio, salir a comer a un buen restaurante, pasar tiempo de calidad con mi familia y mis perritos.</p>  
-
-            </div>  
+      <Navb />
+      <section className="about-header">
+        <Container>
+          <Row className="about-row">
+            <Col sm={6} className="about-text">
+              <h1 className="about-title">¿Quién es <strong className="highlight-name">Valeria Rojas?</strong></h1>
+              <p className="about-paragraph">
+                Soy egresada en <strong>Informática Empresarial</strong>, con un título en <strong>Marketing Digital</strong> y certificada como <strong>System Administrator en ServiceNow</strong>. Además, soy Desarrolladora Full Stack.
+              </p>
+              <p className="about-paragraph">Nací en 1998, en San José, Costa Rica.</p>
+              <p className="about-paragraph">
+                Me apasiona el ejercicio, disfrutar de una buena comida, y pasar tiempo con mi familia y mis perros.
+              </p>
             </Col>
-            <Col sm= {6}>
-            
-            <img src={require ('../../assets/fotoportada.png')} alt='' className='fotop'/>
-            
+            <Col sm={6} className="about-image">
+              <img src={require('../../assets/fotoportada.png')} alt="Valeria Rojas" className="about-img" />
             </Col>
-            
-        
-        </Row>
-        </Container>\
-    
-        <section className='bodyabout2'> 
-        <div className='col'>
-        <p className='abouttext2'> ¿Cuál es mi misión?</p>  
-        </div>
-        <div className='col'>
-        <p className='aboutparra'> Mi misión es presentar posibilidades de desarrollo y diseño innovador poniendo en práctica mis conocimientos y aun más importante, escuchando los deseos y necesidades de mis futuros clientes.</p>                        
-
-        </div>
-        </section>
-        
-        <section>
-          <Conocimientos/>
-        </section>
-      
-        <Container className='contenedor'>
-        <Row>
-        <Col sm={10}>
-            <h1 className='WorkExpet'> ACADEMIC BACKGROUND</h1>
-
-            </Col>
-        <section className='WorkExpe'>
-            
-
-            <div>
-            <Col sm={4}>
-                <Col>
-                <h2 className='WorkExpet1'><strong>2023</strong></h2>
-                </Col>
-                <Col >
-                <h2 className='WorkExpet1'><strong>ServiceNow</strong></h2>
-                <h3 className='WorkExpet2'>Certificated ServiceNow Administrator</h3>
-                </Col>  
-            </Col>
-           
-            <Col sm={4}>
-                <Col >
-                <h2 className='WorkExpet1'><strong>2020 - 2021</strong></h2>
-                </Col>
-                <Col>
-                <h2 className='WorkExpet1'><strong>INTENSA</strong></h2>
-                <h3 className='WorkExpet2'>Intensive English Course</h3>
-                </Col>  
-            </Col>
-            <Col sm={4}>
-                <Col >
-                <h2 className='WorkExpet1'><strong>2019 - 2020</strong></h2>
-                </Col>
-                <Col>
-                <h2 className='WorkExpet1'><strong>Universidad Americana</strong></h2>
-                <h3 className='WorkExpet2'>University Degree in Digital Marketing</h3>
-                </Col>  
-                </Col>
-            </div>
-        <Row>
-
-        </Row>
-            <Col sm={6}>
-                <Col>
-                <h2 className='WorkExpet1'><strong>2022-2023</strong></h2>
-                </Col>
-                <Col>
-                <h2 className='WorkExpet1'><strong>Professional Technical Collage of Santo Domingo</strong></h2>
-                <h3 className='WorkExpet2'>Degree in Business Informatics</h3>
-                </Col>  
-            </Col>
-            <Col s={6}>
-                <Col>
-                <h2 className='WorkExpet1'><strong>2022-2023</strong></h2>
-                </Col>
-                <Col >
-                <h2 className='WorkExpet1'><strong>Universidad Creativa</strong></h2>
-                <h3 className='WorkExpet2'>Technical University Degreed in Full Stack Developer</h3>
-                </Col>  
-            </Col>
-            </section>   
-        </Row>
+          </Row>
         </Container>
-        <section>
-        <section class="Contactos">
-            <Col class="container">
-                <section class="row">
-                    <div class="col">
-                        <p class="titulo">Contáctenos a nuestro WhatsApp</p>    
-                        <p class="encima" href="https://api.whatsapp.com/send?phone=50683105640&text= Hola!%20Quiero%20contratar%20sus%20servicios!"> 83105640</p>
-                    </div>
-                </section>
-            </Col>
-    
-            <Col class="container">
-                <section class="row">
-                    
-                        <div class="col">
-                            <p class="titulo">Correo electrónico:</p>    
-                        <a href="mailto:sudisplay@gmail.com" class="encima">valerojasu98@hotmail.com</a>                        
-                    </div>
-                </section>
-            </Col>
-           
-        </section>
-        </section>
+      </section>
 
-        <section>
-            <Footerp/>
-        </section>
-        
-        
-        
-      </div>
-    
+      <section className="contact-section">
+        <Container>
+          <Row>
+            <Col sm={6}>
+              <p className="contact-title">Contáctame</p>
+              <a href="mailto:valerojasu98@hotmail.com" className="contact-link">valerojasu98@hotmail.com</a>
+            </Col>
+            <Col sm={6}>
+              <p className="contact-title">WhatsApp</p>
+              <a href="https://api.whatsapp.com/send?phone=50683105640" className="contact-link">83105640</a>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
+      <section className="studies-section">
+        <Container>
+          <Row>
+            <Col sm={12}>
+              <h2 className="studies-title">Mi Formación Académica</h2>
+            </Col>
+            <Col sm={4} className="study-card">
+              <h3 className="study-year">2023</h3>
+              <h4 className="study-title">ServiceNow</h4>
+              <p className="study-subtitle">Certified ServiceNow Administrator</p>
+            </Col>
+            <Col sm={4} className="study-card">
+              <h3 className="study-year">2020 - 2021</h3>
+              <h4 className="study-title">INTENSA</h4>
+              <p className="study-subtitle">Intensive English Course</p>
+            </Col>
+            <Col sm={4} className="study-card">
+              <h3 className="study-year">2019 - 2020</h3>
+              <h4 className="study-title">Universidad Americana</h4>
+              <p className="study-subtitle">University Degree in Digital Marketing</p>
+            </Col>
+            <Col sm={4} className="study-card">
+              <h3 className="study-year">2022 - 2023</h3>
+              <h4 className="study-title">Professional Technical College of Santo Domingo</h4>
+              <p className="study-subtitle">Degree in Business Informatics</p>
+            </Col>
+            <Col sm={4} className="study-card">
+              <h3 className="study-year">2022 - 2023</h3>
+              <h4 className="study-title">Universidad Creativa</h4>
+              <p className="study-subtitle">Technical Degree in Full Stack Development</p>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
+      <Footerp />
+    </div>
   )
 }
 
-export default About
+export default About;

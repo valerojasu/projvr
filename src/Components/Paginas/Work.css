@@ -1,21 +1,23 @@
+/* Sección Work */
 .workb {
     width: 100%;
     padding: 5%;
     height: 70vh;
     background: rgba(0, 0, 0, 0.800) url("/src/assets/Rosadom.jpg");
-    background-position: 0% 50%;
-    background-size:cover;
+    background-position: center;
+    background-size: cover;
     background-blend-mode: darken;
     background-repeat: no-repeat;
     color: white;
     font-family: 'Roboto', sans-serif;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
+    overflow: hidden;
 }
 
 .worktext1 {
-    text-align: center;
     font-size: 4rem;
     font-weight: bold;
     margin-bottom: 2%;
@@ -36,34 +38,37 @@
     align-items: center;
     justify-content: center;
     color: black;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones para animación */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .cuadritos:hover {
-    transform: scale(1.2) rotate(10deg); /* Escala y rotación en hover */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra */
+    transform: scale(1.2) rotate(10deg);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .traba {
     display: flex;
     height: 35rem;
     margin: auto;
+    justify-content: center;
+    align-items: center;
 }
 
-.workgit {
-    width: 40%;
-    transition: transform 0.3s ease; /* Transición para suavizar el hover */
+.workgit{
+    width: 50%;
+    transition: transform 0.3s ease;
 }
 .worknet {
-    width: 25%;
-    transition: transform 0.3s ease; /* Transición para suavizar el hover */
+    width: 30%;
+    transition: transform 0.3s ease;
 }
 
+/* Ajustes de hover para los íconos */
 .workgit:hover, .worknet:hover {
-    transform: scale(1.2) rotate(10deg); /* Aplicar efecto de hover a los íconos */
+    transform: scale(1.2) rotate(10deg);
 }
 
-/*RESPONSIVE*/
+/* Responsive Design */
 @media screen and (min-width: 601px) and (max-width: 900px) {
     .worktext1 {
         font-size: 3rem;
@@ -81,17 +86,17 @@
         flex-direction: row;
         align-items: center;
         height: auto;
-        display: flex;
     }
 
     .workgit, .worknet {
-        width: 40%;
+        width: 35%; /* Ajuste el tamaño de los íconos */
     }
 }
 
 @media screen and (min-width: 100px) and (max-width: 600px) {
     .worktext1 {
-        font-size: 2rem;
+        font-size: 1.4rem;
+        margin-top: 10%;
     }
 
     .worktext2 {
@@ -99,18 +104,18 @@
     }
 
     .cuadritos {
-        padding: auto;
+        width: 40%;
         margin: auto;
     }
 
     .traba {
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         height: auto;
-        display: flex;
     }
 
     .workgit, .worknet {
-        width: 30%;
+        margin-bottom: 50%;
+        width: 100%; /* Reduje el tamaño de los íconos en pantallas pequeñas */
     }
 }

@@ -1,86 +1,85 @@
 /* Aseguramos que el contenedor del footer ocupe todo el ancho y alto de la pantalla */
 .footer-wrapper {
-    width: 100%;
-    min-height: 10vh; /* Esto garantiza que el footer ocupe al menos el 100% de la altura de la ventana */
-    position: relative;
-    background-color: #000000; /* Fondo negro */
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Centra el contenido verticalmente */
-    flex-direction: column;
-  }
-  
-  /* Estilo del contenedor del footer */
-  .term {
-    color: white;
-    padding: 2rem 0; /* Agregar espacio para los elementos internos */
-    align-items: center;
-    width: 100%;
-  }
-  
-  /* Estilo del texto del footer */
+  width: 100%;
+  min-height: 6vh; /* Aseguramos que sea un poco más alto */
+  position: relative;
+  background: linear-gradient(to right, #3b1128, #931739); /* Usamos el gradiente para cohesión */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 0;
+  color: white;
+}
+
+/* Estilo del contenedor del footer */
+.term {
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* Estilo del texto del footer */
+.textof {
+  font-size: 1.1rem;
+  padding: 0.5rem 0;
+  text-decoration: none;
+  color: white;
+  display: block;
+  transition: color 0.3s;
+}
+
+.textof a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.textof a:hover {
+  color: #e3a8c5; /* Un color claro para el hover */
+}
+
+/* Estilos de los iconos */
+.iconosf {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.8rem;
+}
+
+.iconosf a {
+  margin: 0 1rem;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.iconosf a:hover {
+  color: #e3a8c5; /* Color para hover */
+}
+
+/* Responsividad para pantallas pequeñas */
+@media screen and (max-width: 800px) {
   .textof {
     font-size: 1rem;
-    padding: 0.5rem 0;
-    text-decoration: none;
-    text-align: center;
-    line-height: 1.5;
-    color: white;
-    width: 100%;
-    display: flex;
-    justify-content: center;
   }
-  
-  .textof a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .textof:hover {
-    color: gainsboro;
-    text-decoration: underline;
-    cursor: pointer;
-  }
-  
-  /* Estilos de los iconos */
+
   .iconosf {
-    margin: 0.5rem 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
-  
-  .iconosf a {
-    margin: 0 0.5rem;
-    color: white;
-    text-decoration: none;
+}
+
+/* Ajustes para pantallas medianas */
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+  .textof {
+    font-size: 1.1rem;
   }
-  
-  .iconosf a:hover {
-    color: gainsboro;
+
+  .iconosf {
+    font-size: 1.6rem;
   }
-  
-  /* Ajustes de tamaño para pantallas pequeñas */
-  @media screen and (max-width: 800px) {
-    .textof {
-      font-size: 0.8rem;
-    }
-  
-    .iconosf {
-      font-size: 1rem;
-    }
-  }
-  
-  /* Ajustes para pantallas medianas */
-  @media screen and (min-width: 801px) and (max-width: 1000px) {
-    .textof {
-      font-size: 0.9rem;
-    }
-  
-    .iconosf {
-      font-size: 1.2rem;
-    }
-  }
+}
+
   
