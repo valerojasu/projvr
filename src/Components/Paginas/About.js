@@ -22,7 +22,7 @@ function About() {
               </p>
             </Col>
             <Col sm={6} className="about-image">
-              <img src={require('../../assets/fotoportada.png')} alt="Valeria Rojas" className="about-img" />
+              <img src={require('../../assets/IMG_2524.jpg')} alt="Valeria Rojas" className="about-img" />
             </Col>
           </Row>
         </Container>
