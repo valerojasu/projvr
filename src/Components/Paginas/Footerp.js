@@ -1,48 +1,40 @@
-import React from 'react'
-import './Footerp.css'
+import React from 'react';
+import './Footerp.css';
+import { Container, Row, Col } from 'react-bootstrap';
 
 const Footerp = () => {
   return (
-    <div><div className="term">
-    <div className="container">
-        <div className="row">
-            <div className="col-5">
-                <h4 className="textof">Copyright @2023 - Created by Valeria Rojas</h4>
-            </div>
-    
-            <div className="col">
-                <h4 className="textof" href="mailto:valerojasu98@hotmail.com">Contáctenos</h4>                        
-                <h4 className="textof">Copyright @2024 - Created by SVRJS</h4>
-            </div>
-    
-            <div className="col">
-                <h4 className="textof" href="mailto:valerojasu98@hotmail.com">Contácteme</h4>                        
-            </div>  
-            <div className='col'>
-                <div className='iconosf'>
-                    <a href='https://www.google.com/'>
-                    <i className="bi bi-github" ></i>
-                    </a>
-                </div>
-                </div>
-                <div className='col'>
-                <div className=' iconosf'>
-                    <a href='https://www.linkedin.com/in/sharon-valeria-rojas-ugalde-347409180/'>
-                    <i className="bi bi-linkedin"></i>
-                    </a>
-                </div>
-                </div>
-                <div className='col'>
-                <div className='iconosf'>
-                    <a href="https://api.whatsapp.com/send?phone=50683105640&text= Hola!%20Quiero%20contratar%20sus%20servicios!">
-                    <i className="bi bi-whatsapp" ></i>                
-                    </a>
-                </div>
-            </div> 
-        </div>
+    <div className="footer-wrapper">
+      <Container className='term'>
+        <Row className="align-items-center">
+          <Col xs={12} sm={6} md={5}>
+            <h4 className="textof">Copyright @2024 - Created by Valeria Rojas</h4>
+          </Col>
+          <Col xs={12} sm={3} md={3}>
+            <h4 className="textof">
+              <a href="mailto:valerojasu98@hotmail.com" className="textof">Contáctenos</a>
+            </h4>
+          </Col>
+          <Col xs={4} sm={2} md={1} className='iconosf'>
+            <a href='https://www.google.com/' aria-label="GitHub">
+              <i className="bi bi-github"></i>
+            </a> 
+          </Col>
+          <Col xs={4} sm={2} md={1} className='iconosf'>
+            <a href='https://www.linkedin.com/in/sharon-valeria-rojas-ugalde-347409180/' aria-label="LinkedIn">
+              <i className="bi bi-linkedin"></i>
+            </a>
+          </Col>
+          <Col xs={4} sm={2} md={1} className='iconosf'>
+            <a href="https://api.whatsapp.com/send?phone=50683105640&text= Hola!%20Quiero%20contratar%20sus%20servicios!" aria-label="WhatsApp">
+              <i className="bi bi-whatsapp"></i>
+            </a>
+          </Col>
+        </Row>
+      </Container>
     </div>
-    </div></div>
-  )
+  );
 }
 
-export default Footerp
+export default Footerp;
+

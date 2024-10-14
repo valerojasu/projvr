@@ -1,15 +1,15 @@
 import React from 'react'
 import './Work.css'
-import lgit from '../../assets/Logos/gitblan.png';
-import logonet from '../../assets/Logos/netlify.png';
+import lgit from '../../assets/Logos/Gitaz.png';
+import logonet from '../../assets/Logos/Netli.png';
 
 
 
 const Work = () => {
   return (
     <div className='workb'>
-        <h1 className='worktext1'>Mis trabajos recientes</h1>
-        <h2 className='worktext2'> Aca estan algunos de mis trabajos recientes</h2>
+        <h1 className='worktext1'>Explora mis proyectos más recientes</h1>
+        <h2 className='worktext2'> Echa un vistazo a algunos de los proyectos en los que he estado trabajando recientemente.</h2>
         <section className='traba'>
                 <div className='col cuadritos'>
                     <a href='https://github.com/valerojasu?tab=repositories'>

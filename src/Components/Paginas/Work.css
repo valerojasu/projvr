@@ -1,11 +1,12 @@
-.workb{
+.workb {
     width: 100%;
     padding: 5%;
-    background:  rgba(0, 0, 0, 0.758) url("/src/assets/porta5.jpg");
+    height: 70vh;
+    background: rgba(0, 0, 0, 0.800) url("/src/assets/Rosadom.jpg");
     background-position: 0% 50%;
     background-size:cover;
     background-blend-mode: darken;
-    background-repeat: no-repeat;    
+    background-repeat: no-repeat;
     color: white;
     font-family: 'Roboto', sans-serif;
     align-items: center;
@@ -13,44 +14,53 @@
     text-align: center;
 }
 
-.worktext1{
+.worktext1 {
     text-align: center;
     font-size: 4rem;
     font-weight: bold;
     margin-bottom: 2%;
 }
-.worktext2{
+
+.worktext2 {
     font-size: 1.5rem;
     margin-bottom: 2%;
 }
 
-.cuadritos{
+.cuadritos {
     border-radius: 30%;
     padding: 0%;
-    width: 10%;
+    width: 15%;
     text-align: center;
     display: flex;
     margin: 2%;
     align-items: center;
     justify-content: center;
     color: black;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones para animación */
 }
 
-.traba{
+.cuadritos:hover {
+    transform: scale(1.2) rotate(10deg); /* Escala y rotación en hover */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+.traba {
     display: flex;
     height: 35rem;
     margin: auto;
-    
-
 }
 
-.workgit{
-    width: 45%;
-
+.workgit {
+    width: 40%;
+    transition: transform 0.3s ease; /* Transición para suavizar el hover */
 }
-.worknet{
-    width: 60%;
+.worknet {
+    width: 25%;
+    transition: transform 0.3s ease; /* Transición para suavizar el hover */
+}
 
+.workgit:hover, .worknet:hover {
+    transform: scale(1.2) rotate(10deg); /* Aplicar efecto de hover a los íconos */
 }
 
 /*RESPONSIVE*/
@@ -102,6 +112,5 @@
 
     .workgit, .worknet {
         width: 30%;
-      
     }
 }

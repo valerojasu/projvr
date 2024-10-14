@@ -1,71 +1,94 @@
-.loguitos{
-    width: 20%;
-    margin: 2%;
+/* Contenedor general */
+.conocimientos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra todo el contenido horizontalmente */
+    justify-content: center; /* Centra todo el contenido verticalmente */
+    height: 50vh; /* Hace que el contenedor ocupe toda la altura de la pantalla */
+    padding: 4% 0% 6% 8%;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  /* Encabezado */
+  .conocimientos-header {
+    margin-bottom: 2rem;
+  }
+  
+  .conotext {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 2rem; /* Agregado para dar espacio entre el encabezado y los íconos */
+  }
+  
+  /* Grid para los logotipos */
+  .conocimientos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 2rem;
+    justify-items: center; /* Centra las tarjetas dentro de la cuadrícula */
+    width: 100%;
+    margin-top: 2rem;
+  }
+  
+  /* Tarjetas de tecnología */
+  .tech-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-}
-
-.conotext{
-  font-size: 2rem;
-   width: 70%;
-   font-weight: 400;
-   padding-bottom: 2%;
-   text-align: start;
-
-}
-
-.conop{
-    font-size: 1.8rem;
-   padding-bottom: 2%;
-   text-align: center;
-   font-weight: 200;
-
-
-}
-
-/* RESPONSIVE*/
-@media screen and (min-width: 601px) and (max-width: 900px) {
+    text-align: center; /* Asegura que todo el texto esté centrado */
+  }
   
-
+  /* Estilo de los logotipos */
+  .loguito {
+    width: 80%;
+    max-width: 120px;
+    margin-bottom: 10px; /* Espacio entre el texto y el logotipo */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .loguito:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Estilo de los títulos de las tecnologías */
+  .conop {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 1rem; /* Espacio entre el título y el logotipo */
+  }
+  
+  /* Responsividad */
+  @media (max-width: 900px) {
     .conotext {
-        font-size: 1.3rem;
-        width: 100%;
-    }
-
-    .conop{
-        font-size: 1.3rem;
-    }
-    
-
-    .bodyaboutcono {
-        margin: auto;
-        padding: auto;
-        text-align: center;  
-
+      font-size: 1.6rem;
     }
   
-}
-
-@media screen and (min-width: 100px) and (max-width: 600px) {
+    .conop {
+      font-size: 1.2rem;
+    }
   
-    .bodyaboutcono {
-        margin: auto;
-        padding: auto;
-        height: auto;
-        display:flow-root;
-        text-align: center; 
-        align-items: center; 
-
+    .loguito {
+      width: 60%;
+      max-width: 100px;
     }
-    .conop{
-        font-size: 0.8rem;
-    }
-
+  }
+  
+  @media (max-width: 600px) {
     .conotext {
-        font-size: 1.2rem;
-        width: 100%;
-        text-align: center;
+      font-size: 1.4rem;
     }
-
   
-
-}
+    .conop {
+      font-size: 1rem;
+    }
+  
+    .loguito {
+      width: 50%;
+      max-width: 90px;
+    }
+  }
+  

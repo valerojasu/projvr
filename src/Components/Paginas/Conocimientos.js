@@ -1,6 +1,6 @@
-import React from 'react'
-import './About.css'
-import './Conocimientos.css'
+import React from 'react';
+import './About.css';
+import './Conocimientos.css';
 import lreact from '../../assets/Logos/react.png';
 import langular from '../../assets/Logos/angular.png';
 import lhtml from '../../assets/Logos/html.png';
@@ -13,66 +13,53 @@ import ljs from '../../assets/Logos/js.png';
 
 const Conocimientos = () => {
   return (
-    <div className='bodyaboutcono' >
-        <section className='bodyaboutcono'> 
-        <div className='col'>
-        <p className='conotext'> ¿Qué conocimientos tengo con respecto a Desarrollo Full Stack?</p>  
+    <div className="conocimientos-container">
+      <section className="conocimientos-header">
+        <p className="conotext">
+          ¿Qué conocimientos tengo con respecto a Desarrollo Full Stack?
+        </p>
+      </section>
+
+      <section className="conocimientos-grid">
+        <div className="tech-card">
+          <h2 className="conop">React</h2>
+          <img src={lreact} alt="React" className="loguito" />
         </div>
-        <div className='col'>
-          <section className='conoci'>
-          <div className='col'>
-            <h2 className='conop'> React </h2>
-            <img src={lreact} alt='React' className='loguitos'></img>
-          </div>
-          <div className='col'>
-          <h2 className='conop'> Angular </h2>
-          <img src={langular} alt='React' className='loguitos'></img>
-          </div>
-          <div className='col'>
-          <h2 className='conop'> HTML </h2>
-          <img src={lhtml} alt='React' className='loguitos'></img>
-          </div>
-          </section>
-          <section className='conoci' >
-          <div className='col'>
-          <h2 className='conop'> CSS </h2>
-          <img src={lcss} alt='React' className='loguitos'></img>
-          </div>
-          <div className='col'>
-          <h2 className='conop'> Github </h2>
-          <img src={lgit} alt='React' className='loguitos'></img>
-          </div>
-          <div className='col'>
-          <h2 className='conop'> Bootstrap </h2>
-          <img src={lboots} alt='React' className='loguitos'></img>
-          </div>
-
-          </section>
-          <section className='conoci'>
-          <div className='col'>
-          <h2 className='conop'> Back-End API </h2>
-          <img src={lapi} alt='React' className='loguitos'></img>
-
-          </div>
-          <div className='col'>
-          <h2 className='conop'> SQL / Azure SQL</h2>
-          <img src={lsql} alt='React' className='loguitos'></img>
-
-          </div>
-          <div className='col'>
-          <h2 className='conop'> JS / JSX </h2>
-          <img src={ljs} alt='React' className='loguitos'></img>
-
-          </div>
-
-          </section>
-          
-          
-
+        <div className="tech-card">
+          <h2 className="conop">Angular</h2>
+          <img src={langular} alt="Angular" className="loguito" />
         </div>
-</section>
+        <div className="tech-card">
+          <h2 className="conop">HTML</h2>
+          <img src={lhtml} alt="HTML" className="loguito" />
+        </div>
+        <div className="tech-card">
+          <h2 className="conop">CSS</h2>
+          <img src={lcss} alt="CSS" className="loguito" />
+        </div>
+        <div className="tech-card">
+          <h2 className="conop">Github</h2>
+          <img src={lgit} alt="Github" className="loguito" />
+        </div>
+        <div className="tech-card">
+          <h2 className="conop">Bootstrap</h2>
+          <img src={lboots} alt="Bootstrap" className="loguito" />
+        </div>
+        <div className="tech-card">
+          <h2 className="conop">Back-End API</h2>
+          <img src={lapi} alt="Back-End API" className="loguito" />
+        </div>
+        <div className="tech-card">
+          <h2 className="conop">SQL / Azure</h2>
+          <img src={lsql} alt="SQL" className="loguito" />
+        </div>
+        <div className="tech-card">
+          <h2 className="conop">JS / JSX</h2>
+          <img src={ljs} alt="JS/JSX" className="loguito" />
+        </div>
+      </section>
     </div>
-  )
-}
+  );
+};
 
-export default Conocimientos
+export default Conocimientos;

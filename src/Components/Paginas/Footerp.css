@@ -1,71 +1,86 @@
-.term{
-    align-content: center;
-    background-color:#000000;
-    color: white; 
+/* Aseguramos que el contenedor del footer ocupe todo el ancho y alto de la pantalla */
+.footer-wrapper {
     width: 100%;
-    padding: 0.3% 0%;
+    min-height: 10vh; /* Esto garantiza que el footer ocupe al menos el 100% de la altura de la ventana */
+    position: relative;
+    background-color: #000000; /* Fondo negro */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centra el contenido verticalmente */
+    flex-direction: column;
+  }
   
-}
-
-
-.textof{
+  /* Estilo del contenedor del footer */
+  .term {
+    color: white;
+    padding: 2rem 0; /* Agregar espacio para los elementos internos */
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* Estilo del texto del footer */
+  .textof {
     font-size: 1rem;
-    padding: 1%;
+    padding: 0.5rem 0;
     text-decoration: none;
-    text-align: left;
-    line-height: 2.3;
+    text-align: center;
+    line-height: 1.5;
     color: white;
     width: 100%;
-}
-
-.textof:hover{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .textof a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .textof:hover {
     color: gainsboro;
     text-decoration: underline;
     cursor: pointer;
-}
-
-.iconosf{
-    margin: 5%;
+  }
+  
+  /* Estilos de los iconos */
+  .iconosf {
+    margin: 0.5rem 0;
     display: flex;
+    justify-content: center;
     align-items: center;
-    text-decoration: none;
     color: white;
     font-size: 1.5rem;
-}
-a{
-    text-decoration: none;
+  }
+  
+  .iconosf a {
+    margin: 0 0.5rem;
     color: white;
-    
-}
-
-
-@media screen and (min-width: 100px) and (max-width: 800px) {
-    .textof{
-        font-size: 0.5rem;
+    text-decoration: none;
+  }
+  
+  .iconosf a:hover {
+    color: gainsboro;
+  }
+  
+  /* Ajustes de tamaño para pantallas pequeñas */
+  @media screen and (max-width: 800px) {
+    .textof {
+      font-size: 0.8rem;
     }
-
-    
-    .iconosf{
-       
-        font-size: 0.8rem;
+  
+    .iconosf {
+      font-size: 1rem;
     }
-
-}
-
-@media screen and (min-width: 801px) and (max-width: 1000px) {
-   
-    
-    .textof{
-        font-size: 0.8rem;
+  }
+  
+  /* Ajustes para pantallas medianas */
+  @media screen and (min-width: 801px) and (max-width: 1000px) {
+    .textof {
+      font-size: 0.9rem;
     }
-
-    
-    .iconosf{
-       
-        font-size: 1rem;
+  
+    .iconosf {
+      font-size: 1.2rem;
     }
-
-}
-
-
+  }
   
