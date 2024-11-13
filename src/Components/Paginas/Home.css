@@ -34,7 +34,7 @@
     letter-spacing: 0.1rem;
     text-transform: uppercase;
     text-decoration: none;
-    margin: 0 1rem;
+    margin: 0%;
     cursor: pointer;
     display: flex; /* Usar flexbox para una distribución más flexible */
     align-items: center;
@@ -46,16 +46,6 @@
 
 .divi {
     padding: 0 9%;
-}
-
-.container-fluid {
-    padding: 1rem 2%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    background: transparent;
-    box-sizing: border-box;
 }
 
 /* Responsive Design */

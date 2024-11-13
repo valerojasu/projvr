@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <div>
       <div className='portada'>
-        <div className="container-fluid navbar-about">  {/* Ajustado el nombre de clase */}
+        <div className="container-fluid">  {/* Ajustado el nombre de clase */}
           <Link to='/Mainp'>
             <img src={v} alt="logo" className='logov'/>
           </Link>     
