@@ -6,7 +6,6 @@
     width: 100%;
     height: 100vh; /* Altura completa */
     background: rgba(0, 0, 0, 0.5) url("/src/assets/Port1.jpg") center center / cover no-repeat;
-    display: flex;
     align-items: center; /* Centra verticalmente */
     justify-content: flex-start; /* Alinea el contenido a la izquierda */
     padding-left: 5%; /* Espacio a la izquierda */
@@ -18,9 +17,8 @@
     color: #fff;
     font-size: 3rem; /* Tamaño base del texto */
     text-align: left;
+    margin-top: 25vh;
     max-width: 600px; /* Limita el ancho del texto para evitar sobreflows */
-    margin: 0;
-    /* Opcional: agregar sombra al texto para mejorar la legibilidad */
     text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
 }
 
@@ -38,7 +36,7 @@
     text-decoration: none;
     margin: 0 1rem;
     cursor: pointer;
-    display: flex;
+    display: flex; /* Usar flexbox para una distribución más flexible */
     align-items: center;
 }
 
