@@ -42,7 +42,7 @@
 }
 
 .about-img {
-    width: 70%;
+    width: 50%;
     height: auto;
     border-radius: 8px;
     max-width: 600px; /* Limita el tamaño máximo en pantallas grandes */
