@@ -2,10 +2,10 @@
 .conocimientos-container {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centra todo el contenido horizontalmente */
-  justify-content: center; /* Centra todo el contenido verticalmente */
-  height: auto; /* Ajustamos la altura para que el contenedor no sea demasiado alto */
-  padding: 4% 0% 6% 8%;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  padding: 4% 5%; /* Reducido el padding en pantallas pequeñas */
   background-color: #f4f4f4;
   text-align: center;
 }
@@ -19,7 +19,14 @@
   font-size: 2rem;
   font-weight: 600;
   color: #333;
-  margin-bottom: 2rem; /* Espacio entre el encabezado y los íconos */
+  margin-bottom: 2rem;
+}
+
+.conop {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 1rem;
 }
 
 /* Grid para los logotipos */
@@ -27,7 +34,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 2rem;
-  justify-items: center; /* Centra las tarjetas dentro de la cuadrícula */
+  justify-items: center;
   width: 100%;
   margin-top: 2rem;
 }
@@ -38,14 +45,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center; /* Asegura que todo el texto esté centrado */
+  text-align: center;
 }
 
 /* Estilo de los logotipos */
 .loguito {
   width: 80%;
-  max-width: 120px;
-  margin-bottom: 10px; /* Espacio entre el texto y el logotipo */
+  max-width: 100px;
+  max-height: auto;
+  margin-bottom: 10px;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -53,56 +61,46 @@
   transform: scale(1.1);
 }
 
-/* Estilo de los títulos de las tecnologías */
-.conop {
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: #333;
-  margin-bottom: 1rem; /* Espacio entre el título y el logotipo */
-}
-
-/* Responsividad */
-
 /* Pantallas medianas y grandes */
 @media (max-width: 900px) {
   .conotext {
-      font-size: 1.6rem; /* Reduce el tamaño del texto del encabezado */
+    font-size: 1.6rem;
   }
 
   .conop {
-      font-size: 1.2rem; /* Reduce el tamaño de los títulos de las tecnologías */
+    font-size: 1.2rem;
   }
 
   .loguito {
-      width: 60%;
-      max-width: 100px; /* Ajusta el tamaño de los logotipos */
+    width: 60%;
+    max-width: 100px;
   }
 
   /* En pantallas medianas, reducir el espaciado entre las tarjetas */
   .conocimientos-grid {
-      gap: 1rem; /* Espaciado más pequeño entre las tarjetas */
+    gap: 1rem;
   }
 }
 
 /* Pantallas pequeñas */
 @media (max-width: 600px) {
   .conotext {
-    margin-top: 20%;
-    font-size: 1.3rem; /* Reduce aún más el tamaño del texto del encabezado */
+    margin-top: 10%; /* Ajuste de espacio superior */
+    font-size: 1.3rem;
   }
 
   .conop {
-      font-size: 1rem; /* Reduce aún más el tamaño de los títulos de las tecnologías */
+    font-size: 1rem;
   }
 
   .loguito {
-      width: 50%; /* Logotipos más pequeños */
-      max-width: 90px; /* Tamaño máximo de los logotipos */
+    width: 50%;
+    max-width: 90px;
   }
 
   /* En pantallas pequeñas, las tarjetas deben estar en una sola columna */
   .conocimientos-grid {
-      grid-template-columns: 1fr; /* Hace que todas las tarjetas estén en una sola columna */
-      gap: 1rem; /* Reducimos el espaciado entre las tarjetas */
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
 }

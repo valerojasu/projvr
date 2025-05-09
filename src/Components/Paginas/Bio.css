@@ -53,7 +53,6 @@
     display: flex; /* Usamos flexbox para alinear los elementos en fila */
     justify-content: space-between; /* Separa el título y el texto con el máximo espacio posible */
     align-items: center; /* Alinea los elementos verticalmente */
-    border-radius: 15px; /* Bordes redondeados */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para darle profundidad */
     margin-top: 4rem; /* Espacio superior para separar de la sección anterior */
 }

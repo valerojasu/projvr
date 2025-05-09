@@ -3,7 +3,7 @@
 .navbar-home {
   position: fixed;
   width: 100%;
-  padding: 2rem 0rem;
+  padding: 2rem 5rem;
   background: transparent;
   z-index: 1000;
   top: 0;
@@ -12,13 +12,14 @@
 
 .navbar-home.scrolled {
   background: rgba(0, 0, 0, 0.7);
+  width: 100%;
 }
 
 .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
+  width: 100%;
 }
 
 .logov {

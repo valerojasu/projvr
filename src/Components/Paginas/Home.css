@@ -8,15 +8,15 @@
     background: rgba(0, 0, 0, 0.5) url("/src/assets/Port1.jpg") center center / cover no-repeat;
     align-items: center; /* Centra verticalmente */
     justify-content: flex-start; /* Alinea el contenido a la izquierda */
-    padding-left: 5%; /* Espacio a la izquierda */
     box-sizing: border-box;
 }
 
 /* Centrado de título en la portada */
 .portatitu {
     color: #fff;
-    font-size: 3rem; /* Tamaño base del texto */
+    font-size: 6rem; /* Tamaño base del texto */
     text-align: left;
+    padding: 5%; /* Espacio a la izquierda */
     margin-top: 25vh;
     max-width: 600px; /* Limita el ancho del texto para evitar sobreflows */
     text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
@@ -101,6 +101,6 @@
     }
 
     .portatitu {
-        font-size: 3.5rem;
+        font-size: 4rem;
     }
 }
