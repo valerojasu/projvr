@@ -50,6 +50,11 @@ function About() {
               <h2 className="studies-title">Mi Formación Académica</h2>
             </Col>
             <Col sm={4} className="study-card">
+              <h3 className="study-year">2025</h3>
+              <h4 className="study-title">Microsoft Certified </h4>
+              <p className="study-subtitle">Technical Degree in Full Stack Development</p>
+            </Col>
+            <Col sm={4} className="study-card">
               <h3 className="study-year">2023</h3>
               <h4 className="study-title">ServiceNow</h4>
               <p className="study-subtitle">Certified ServiceNow Administrator</p>
@@ -72,8 +77,9 @@ function About() {
             <Col sm={4} className="study-card">
               <h3 className="study-year">2022 - 2023</h3>
               <h4 className="study-title">Universidad Creativa</h4>
-              <p className="study-subtitle">Technical Degree in Full Stack Development</p>
+              <p className="study-subtitle">AZ-900 - Azure Fundamentals</p>
             </Col>
+           
           </Row>
         </Container>
       </section>
