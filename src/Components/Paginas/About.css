@@ -1,0 +1,189 @@
+/* Estilo principal de la landing page */
+.about-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #3b1128, #931739);
+    color: white;
+    padding: 0 5%;
+    text-align: center;
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+  }
+  
+  .about-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+  
+  .about-text {
+    max-width: 50%;
+    padding-right: 2rem; /* Agrega un poco de espacio para evitar que el texto quede pegado */
+  }
+  
+  .about-title {
+    font-size: 3rem;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem; /* Espacio entre el título y el párrafo */
+  }
+  
+  .highlight-name {
+    color: #f39c12;
+  }
+  
+  .about-paragraph {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-top: 1rem;
+  }
+  
+  .about-img {
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+    max-width: 600px; /* Limita el tamaño máximo en pantallas grandes */
+  }
+  
+  .contact-section {
+    background-color: #f1f1f1;
+    padding: 4rem 0;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  .contact-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-link {
+    font-size: 1.2rem;
+    color: #931739;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .contact-link:hover {
+    text-decoration: underline;
+  }
+  
+  .studies-section {
+    background-color: #f9f9f9;
+    padding: 4rem 0;
+    text-align: center;
+  }
+  
+  .studies-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #931739;
+  }
+  
+  .study-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin: 1rem 0;
+    text-align: center;
+    width: 100%; /* Asegura que las tarjetas ocupen todo el ancho */
+  }
+  
+  .study-year {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #3b1128;
+  }
+  
+  .study-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  
+  .study-subtitle {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .about-header {
+      padding: 0 3%; /* Reduce el padding en pantallas pequeñas */
+    }
+  
+    .about-title {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+  
+    .about-paragraph {
+      font-size: 1rem;
+    }
+  
+    .about-text {
+      max-width: 100%;
+    }
+  
+    .about-img {
+      width: 80%;
+      margin-top: 2rem;
+      max-width: 100%; /* Garantiza que la imagen no se desborde */
+    }
+  
+    .contact-title {
+      font-size: 1.2rem;
+    }
+  
+    .contact-link {
+      font-size: 1rem;
+    }
+  
+    .studies-title {
+      font-size: 2rem;
+    }
+  
+    .study-card {
+      padding: 1rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .studies-title {
+      font-size: 1.8rem; /* Reducimos el tamaño del título en pantallas pequeñas */
+      margin-bottom: 1.5rem;
+    }
+  
+    .study-card {
+      padding: 1.5rem; /* Reducimos el padding de las tarjetas */
+      margin: 1rem 0;
+    }
+  
+    .study-year {
+      font-size: 1.2rem; /* Reducimos el tamaño del año */
+    }
+  
+    .study-title {
+      font-size: 1.1rem; /* Reducimos el tamaño de los títulos */
+    }
+  
+    .study-subtitle {
+      font-size: 0.9rem; /* Reducimos el tamaño del subtítulo */
+    }
+  
+    .studies-section .row {
+      display: block; /* Las tarjetas se apilarán */
+      width: 100%;
+    }
+  
+    .study-card {
+      margin-bottom: 1rem; /* Añadimos margen entre las tarjetas */
+    }
+  }
+  

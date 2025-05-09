@@ -1,0 +1,160 @@
+/* Estilo General de la Bio */
+.bodyb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 4% 5%;
+    text-align: start;
+    text-transform: uppercase;
+}
+
+.nombc {
+    color: #931739;
+    font-weight: bold;
+}
+
+.biotext {
+    font-size: 3.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.biotext2 {
+    font-size: 3rem;
+    font-weight: lighter;
+    padding-bottom: 2%;
+}
+
+.bioparra {
+    font-size: 1rem;
+    width: 100%;
+    letter-spacing: 0.1rem;
+    text-align: start;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+}
+
+/* Estilo de la foto */
+.foto {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-left: 20px; /* Espacio entre el texto y la foto */
+}
+
+/* Estilo para la sección "Mi misión" */
+.bodyabout2 {
+    background: linear-gradient(to right, #3b1128, #931739); /* Fondo con gradiente */
+    color: white; /* El texto será blanco para que resalte */
+    padding: 5% 10%; /* Espaciado para que el contenido no quede pegado a los bordes */
+    display: flex; /* Usamos flexbox para alinear los elementos en fila */
+    justify-content: space-between; /* Separa el título y el texto con el máximo espacio posible */
+    align-items: center; /* Alinea los elementos verticalmente */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para darle profundidad */
+    margin-top: 4rem; /* Espacio superior para separar de la sección anterior */
+}
+
+.abouttext2 {
+    font-size: 2.5rem; /* Tamaño grande para el título */
+    font-weight: bold;
+    text-transform: uppercase; /* Convertir a mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre las letras */
+    margin-right: 3rem; /* Añadimos un margen derecho para separar el título del texto */
+}
+
+.aboutparra {
+    font-size: 1.2rem; /* Tamaño de fuente más pequeño para el párrafo */
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8; /* Aumentar el interlineado para mayor legibilidad */
+    margin: 0; /* Sin margen para que se ajuste correctamente al contenedor */
+    max-width: 600px; /* Limitar el ancho para que el texto no se vea demasiado ancho */
+}
+
+
+/* Responsive para pantallas medianas y grandes */
+@media screen and (min-width: 601px) and (max-width: 1500px) {
+    .bodyb {
+        flex-direction: row; /* Los elementos estarán en fila */
+    }
+
+    .foto {
+        max-width: 90%; 
+        margin-left: 10%;/* Foto más pequeña */
+    }
+
+    .biotext {
+        font-size: 2rem;
+    }
+
+    .biotext2 {
+        font-size: 1.6rem;
+    }
+
+    .bioparra {
+        font-size: 1rem;
+    }
+
+    /* Adaptamos la sección "Mi misión" para pantallas medianas y grandes */
+    .bodyabout2 {
+        flex-direction: row; /* Título y texto en fila */
+        padding: 5% 10%; /* Mantener un buen espaciado */
+        justify-content: space-between; /* Separar título y texto */
+    }
+
+    .abouttext2 {
+        font-size: 2.5rem; /* Título más grande */
+        margin-right: 3rem; /* Espacio entre título y texto */
+    }
+
+    .aboutparra {
+        font-size: 1.2rem; /* Texto más pequeño */
+        max-width: 600px; /* Limitar el ancho del texto */
+    }
+}
+
+/* Responsive para pantallas pequeñas */
+@media screen and (max-width: 600px) {
+    .bodyb {
+        flex-direction: column; /* Los elementos estarán en columna */
+        align-items: center; /* Centrado del contenido */
+        justify-content: center;
+    }
+
+    .biotext, .biotext2 {
+        text-align: center; /* Centrar el texto */
+        font-size: 1.4rem;
+
+    }
+
+    .bioparra{
+        font-size: 0.8rem;
+
+    }
+
+    .foto {
+        width: 80%; /* Foto más grande en pantallas pequeñas */
+        margin-top: 2rem; /* Separación superior */
+    }
+
+    /* Adaptamos la sección "Mi misión" para pantallas pequeñas */
+    .bodyabout2 {
+        flex-direction: column; /* Título y texto en columna */
+        padding: 3% 5%; /* Menos espaciado en pantallas pequeñas */
+        text-align: center; /* Centrar texto y título */
+    }
+
+    .abouttext2 {
+        font-size: 1.4rem; /* Título más pequeño */
+        margin-right: 0; /* Eliminar margen para que esté centrado */
+    }
+
+    .aboutparra {
+        font-size: 1rem; /* Reducir tamaño del texto */
+        width: 100%; /* Aseguramos que el texto ocupe todo el ancho */
+    }
+}
+

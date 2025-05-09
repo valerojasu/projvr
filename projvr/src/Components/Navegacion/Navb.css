@@ -1,0 +1,111 @@
+/* Navbar de la página About */
+.navbar-about {
+  background: linear-gradient(to right, #3b1128, #931739); /* Fondo gradiente */
+  padding: 1rem 2rem;
+}
+
+.logov {
+  height: 40px; /* Ajusta la altura del logo para que coincida con la altura de la fuente */
+  max-width: none; /* Evita que el logo se ajuste automáticamente */
+}
+
+.container-fluid {
+  display: flex; /* Usar flexbox para una distribución más flexible */
+  justify-content: space-between;
+  align-items: center; /* Alinea verticalmente los elementos */
+  padding: 2%;
+  width: 100%;
+  color: white; /* Blanco para asegurar visibilidad sobre el fondo */
+}
+
+.menutinav {
+  font-size: 1rem;
+  color: white; /* Texto blanco por defecto */
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin: 0;
+  transition: color 0.3s ease; /* Transición suave para los cambios de color */
+}
+
+.menutinav:hover {
+  color: #C39BD3; /* Color morado al pasar el ratón */
+  color: #bf2142;
+  cursor: pointer;
+}
+
+.menuitem {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0.4%;
+}
+
+/* Responsive Design */
+
+/* Para pantallas pequeñas */
+@media screen and (max-width: 600px) {
+  .logov {
+    height: 30px; /* Ajusta la altura del logo para pantallas pequeñas */
+  }
+
+  .container-fluid {
+    flex-direction: column; /* Cambia la dirección del flex a columna */
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+  }
+
+  .menutinav {
+    font-size: 0.9rem; /* Ajusta el tamaño de fuente */
+    padding: 1rem; /* Espaciado más grande para que los enlaces no estén tan juntos */
+  }
+
+  .menuitem {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+}
+
+/* Para pantallas medianas (más de 600px, menos de 900px) */
+@media screen and (min-width: 601px) and (max-width: 899px) {
+  .logov {
+    height: 40px; /* Aumenta la altura del logo para pantallas medianas */
+  }
+
+  .container-fluid {
+    flex-direction: row; /* Vuelve a la dirección por defecto */
+    justify-content: space-between; /* Espaciado entre los elementos */
+  }
+
+  .menutinav {
+    font-size: 1rem; /* Ajuste para pantallas medianas */
+  }
+
+  .menuitem {
+    width: auto; /* Permite que los enlaces mantengan su tamaño natural */
+  }
+}
+
+/* Para pantallas grandes (más de 900px) */
+@media screen and (min-width: 900px) {
+  .logov {
+    height: 50px; /* Logo más grande en pantallas grandes */
+  }
+
+  .container-fluid {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menutinav {
+    font-size: 1.2rem; /* Un poco más grande para pantallas grandes */
+  }
+
+  .menuitem {
+    width: auto; /* Mantiene la flexibilidad de los elementos */
+    text-align: left;
+  }
+}

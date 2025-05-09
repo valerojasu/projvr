@@ -1,0 +1,121 @@
+/* Sección Work */
+.workb {
+    width: 100%;
+    padding: 5%;
+    height: 70vh;
+    background: rgba(0, 0, 0, 0.800) url("/src/assets/Rosadom.jpg");
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.worktext1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+.worktext2 {
+    font-size: 1.5rem;
+    margin-bottom: 2%;
+}
+
+.cuadritos {
+    border-radius: 30%;
+    padding: 0%;
+    width: 15%;
+    text-align: center;
+    display: flex;
+    margin: 2%;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cuadritos:hover {
+    transform: scale(1.2) rotate(10deg);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.traba {
+    display: flex;
+    height: 35rem;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.workgit{
+    width: 50%;
+    transition: transform 0.3s ease;
+}
+.worknet {
+    width: 30%;
+    transition: transform 0.3s ease;
+}
+
+/* Ajustes de hover para los íconos */
+.workgit:hover, .worknet:hover {
+    transform: scale(1.2) rotate(10deg);
+}
+
+/* Responsive Design */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    .worktext1 {
+        font-size: 3rem;
+    }
+
+    .worktext2 {
+        font-size: 1.2rem;
+    }
+
+    .cuadritos {
+        width: 20%;
+    }
+
+    .traba {
+        flex-direction: row;
+        align-items: center;
+        height: auto;
+    }
+
+    .workgit, .worknet {
+        width: 35%; /* Ajuste el tamaño de los íconos */
+    }
+}
+
+@media screen and (min-width: 100px) and (max-width: 600px) {
+    .worktext1 {
+        font-size: 1.4rem;
+        margin-top: 10%;
+    }
+
+    .worktext2 {
+        font-size: 0.8rem;
+    }
+
+    .cuadritos {
+        width: 40%;
+        margin: auto;
+    }
+
+    .traba {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .workgit, .worknet {
+        margin-bottom: 50%;
+        width: 100%; /* Reduje el tamaño de los íconos en pantallas pequeñas */
+    }
+}

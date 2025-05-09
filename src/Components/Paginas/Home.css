@@ -1,0 +1,106 @@
+/* Portada */
+.portada {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh; /* Altura completa */
+    background: rgba(0, 0, 0, 0.5) url("/src/assets/Port1.jpg") center center / cover no-repeat;
+    align-items: center; /* Centra verticalmente */
+    justify-content: flex-start; /* Alinea el contenido a la izquierda */
+    padding-left: 5%; /* Espacio a la izquierda */
+    box-sizing: border-box;
+}
+
+/* Centrado de título en la portada */
+.portatitu {
+    color: #fff;
+    font-size: 3rem; /* Tamaño base del texto */
+    text-align: left;
+    margin-top: 25vh;
+    max-width: 600px; /* Limita el ancho del texto para evitar sobreflows */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+/* Navbar */
+.logov {
+    height: 40px; /* Tamaño consistente del logo */
+}
+
+.menutitnav {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0%;
+    cursor: pointer;
+    display: flex; /* Usar flexbox para una distribución más flexible */
+    align-items: center;
+}
+
+.menutitnav:hover {
+    color: #C39BD3;
+}
+
+.divi {
+    padding: 0 9%;
+}
+
+/* Responsive Design */
+
+/* Dispositivos móviles */
+@media screen and (max-width: 599px) {
+    .portatitu {
+        font-size: 2rem; /* Tamaño reducido en móviles */
+        max-width: 90%; /* Mayor ancho en móviles */
+        padding-left: 0; /* Eliminar padding adicional si es necesario */
+    }
+
+    .portada {
+        padding-left: 5%; /* Ajustar padding si es necesario */
+    }
+
+    .menutit {
+        font-size: 1rem; /* Tamaño de fuente reducido */
+        margin: 0 0.5rem; /* Ajuste del margen */
+    }
+}
+
+/* Tablets y dispositivos medianos */
+@media screen and (min-width: 600px) and (max-width: 899px) {
+    .portatitu {
+        font-size: 2.5rem; /* Tamaño intermedio */
+        max-width: 80%;
+    }
+
+    .menutit {
+        font-size: 1.1rem;
+        margin: 0 0.75rem;
+    }
+}
+
+/* Dispositivos grandes */
+@media screen and (min-width: 900px) {
+    .portatitu {
+        font-size: 3rem; /* Tamaño base para pantallas grandes */
+        max-width: 600px;
+    }
+
+    .menutit {
+        font-size: 1.2rem;
+        margin: 0 1rem;
+    }
+}
+
+/* Extra: Mejoras para la imagen de fondo en pantallas muy grandes */
+@media screen and (min-width: 1401px) {
+    .portada {
+        background-position: center center;
+    }
+
+    .portatitu {
+        font-size: 3.5rem;
+    }
+}

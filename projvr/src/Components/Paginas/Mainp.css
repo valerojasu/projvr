@@ -1,0 +1,158 @@
+/* Botón */
+.boton {
+    font-size: 2rem;
+    margin: 0%;
+    padding: 2%;
+    border-radius: 45%;
+    text-decoration: none;
+    border: none;
+    color: white;
+    font-family: 'Englebert', cursive;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.boton:hover {
+    color: #931739;
+    transform: scale(1.05); /* Efecto de agrandar el botón al pasar el ratón */
+}
+
+/* Logo */
+.App-logo {
+    width: 6%;
+    margin: 2% 0%;
+    pointer-events: none;
+    transition: width 0.3s ease;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Contenedor principal */
+.mainp {
+    background-color: black;
+    width: 100%;
+    color: white;
+    height: auto; /* Cambiado a 'auto' para mejorar la adaptabilidad */
+    min-height: 70rem; /* Asegura que tenga al menos 70rem de altura */
+    text-align: center;
+    margin: 0%;
+    padding: 10% 1% 12%;
+}
+
+/* Títulos */
+.tit1, .tit2 {
+    font-family: 'Englebert', cursive;
+    text-align: center;
+    margin: 0%;
+}
+
+.tit1 {
+    font-size: 2rem;
+}
+
+.tit2 {
+    font-size: 2rem;
+    margin: 2%;
+}
+
+.nombre {
+    color: white;
+    font-size: 7rem;
+    margin: 0%;
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* Responsive Design */
+@media screen and (min-width: 100px) and (max-width: 400px) {
+    .boton {
+        font-size: 1.5rem;
+    }
+
+    .App-logo {
+        width: 7%;
+    }
+
+    .mainp {
+        height: auto;
+        min-height: 50rem;
+    }
+
+    .tit1 {
+        font-size: 1rem;
+    }
+
+    .tit2 {
+        font-size: 1rem;
+    }
+
+    .nombre {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 750px) {
+    .boton {
+        font-size: 2rem;
+    }
+
+    .App-logo {
+        width: 8%;
+    }
+
+    .mainp {
+        height: auto;
+        min-height: 40rem;
+    }
+
+    .tit1 {
+        font-size: 1.5rem;
+    }
+
+    .tit2 {
+        font-size: 1.5rem;
+    }
+
+    .nombre {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 751px) {
+    .boton {
+        font-size: 2rem;
+    }
+
+    .App-logo {
+        width: 6%;
+    }
+
+    .mainp {
+        height: auto;
+        min-height: 70rem;
+    }
+
+    .tit1 {
+        font-size: 2rem;
+    }
+
+    .tit2 {
+        font-size: 2rem;
+    }
+
+    .nombre {
+        font-size: 7rem;
+    }
+}

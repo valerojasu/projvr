@@ -1,0 +1,85 @@
+/* Aseguramos que el contenedor del footer ocupe todo el ancho y alto de la pantalla */
+.footer-wrapper {
+  width: 100%;
+  min-height: 6vh; /* Aseguramos que sea un poco más alto */
+  position: relative;
+  background: linear-gradient(to right, #3b1128, #931739); /* Usamos el gradiente para cohesión */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 0;
+  color: white;
+}
+
+/* Estilo del contenedor del footer */
+.term {
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* Estilo del texto del footer */
+.textof {
+  font-size: 1.1rem;
+  padding: 0.5rem 0;
+  text-decoration: none;
+  color: white;
+  display: block;
+  transition: color 0.3s;
+}
+
+.textof a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.textof a:hover {
+  color: #e3a8c5; /* Un color claro para el hover */
+}
+
+/* Estilos de los iconos */
+.iconosf {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.8rem;
+}
+
+.iconosf a {
+  margin: 0 1rem;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.iconosf a:hover {
+  color: #e3a8c5; /* Color para hover */
+}
+
+/* Responsividad para pantallas pequeñas */
+@media screen and (max-width: 800px) {
+  .textof {
+    font-size: 1rem;
+  }
+
+  .iconosf {
+    font-size: 1.4rem;
+  }
+}
+
+/* Ajustes para pantallas medianas */
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+  .textof {
+    font-size: 1.1rem;
+  }
+
+  .iconosf {
+    font-size: 1.6rem;
+  }
+}
+
+  

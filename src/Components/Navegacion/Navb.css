@@ -1,0 +1,102 @@
+/* Estilos comunes para ambos navbars */
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 2.1rem 5rem;
+  background: transparent;
+  z-index: 1000;
+  top: 0;
+  transition: background 0.3s ease;
+}
+
+.navbar.scrolled {
+  background: rgba(0, 0, 0, 0.7); /* Oscurece el navbar al hacer scroll */
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logov {
+  height: 40px; /* Ajusta la altura del logo */
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.menutinav {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.menutinav:hover {
+  color: #C39BD3;
+}
+
+/* Navbar específico para la página Home */
+.navbar-home {
+  background: transparent; /* Fondo transparente por defecto */
+}
+
+/* Navbar específico para la página About */
+.navbar-about {
+  background: transparent; /* Fondo transparente por defecto */
+}
+
+/* Menú hamburguesa */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 4px 0;
+  background-color: #fff;
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: rotate(-45deg);
+  position: relative;
+  top: 6px;
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(45deg);
+  position: relative;
+  top: -6px;
+}
+
+/* Navbar responsivo para pantallas pequeñas */
+@media screen and (max-width: 600px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
