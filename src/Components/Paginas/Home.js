@@ -17,9 +17,11 @@ const Home = () => {
           <strong>Hi, I'm Valeria Rojas</strong>
         </h1>
         <h1 className="portatitu2">
-          {" "}
           I build fast, modern websites for small businesses and entrepreneurs.
         </h1>
+        <h2 className="portatitu3">
+          <strong> Responsive • Modern • Performance-focused </strong>
+        </h2>
       </div>
 
       <Bio />

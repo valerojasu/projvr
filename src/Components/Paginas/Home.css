@@ -24,10 +24,20 @@
 }
 .portatitu2 {
   color: #fff;
-  font-size: 4rem; /* Tamaño base del texto */
+  font-size: 3rem; /* Tamaño base del texto */
+  text-align: left;
+  margin: 0vh 0vh 3vh 0vh;
+  padding: 2%; /* Espacio a la izquierda */
+  max-width: 60%;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.portatitu3 {
+  color: #fff;
+  font-size: 1.9rem; /* Tamaño base del texto */
   text-align: left;
   padding: 2%; /* Espacio a la izquierda */
   max-width: 60%;
+  text-transform: uppercase;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
