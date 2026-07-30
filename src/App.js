@@ -1,10 +1,8 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
 import About from "./Components/Paginas/About";
 import Home from "./Components/Paginas/Home";
-import Navb from "./Components/Navegacion/Navb";
 
 const App = () => {
   return (
