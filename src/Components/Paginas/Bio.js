@@ -39,7 +39,7 @@ const Bio = () => {
           {/* Columna de Imagen */}
           <Col sm={12} md={6}>
             <img
-              src={require("../../assets/fotoportada.png")}
+              src={require("../../assets/fotoportada2.jpg")}
               alt=""
               className="foto"
             />

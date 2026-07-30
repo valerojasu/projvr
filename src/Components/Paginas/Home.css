@@ -4,105 +4,144 @@
   z-index: 1;
   overflow: hidden;
   width: 100%;
-  height: 100vh; /* Altura completa */
-  background: rgba(0, 0, 0, 0.5) url("/src/assets/Port1.jpg") center center /
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.55) url("/src/assets/Port1.jpg") center center /
     cover no-repeat;
-  align-items: center; /* Centra verticalmente */
-  justify-content: flex-start; /* Alinea el contenido a la izquierda */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   box-sizing: border-box;
 }
 
-/* Centrado de título en la portada */
+/* Contenido Hero */
+.hero-content {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 8%;
+}
+
+/* Nombre */
 .portatitu {
   color: #fff;
-  font-size: 4rem; /* Tamaño base del texto */
+  font-size: 4rem;
   text-align: left;
-  padding: 2%; /* Espacio a la izquierda */
-  margin: 25vh 0vh 3vh 0vh;
-  max-width: 60%;
+  margin: 15vh 0vh 5vh 0vh;
+  max-width: 800px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
+
+/* Descripción */
 .portatitu2 {
   color: #fff;
-  font-size: 3rem; /* Tamaño base del texto */
+  font-size: 2.7rem;
+  font-weight: 400;
+  line-height: 1.4;
   text-align: left;
-  margin: 0vh 0vh 3vh 0vh;
-  padding: 2%; /* Espacio a la izquierda */
-  max-width: 60%;
+  margin: 0% 0% 4% 0%;
+  max-width: 750px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
+
+/* Tags */
 .portatitu3 {
   color: #fff;
-  font-size: 1.8rem; /* Tamaño base del texto */
+  font-size: 1.7rem;
+  letter-spacing: 2px;
   text-align: left;
-  padding: 2%; /* Espacio a la izquierda */
-  max-width: 60%;
+  margin: 0vh 0vh 10vh 0vh;
   text-transform: uppercase;
+  font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-/* Navbar */
-.logov {
-  height: 40px; /* Tamaño consistente del logo */
-}
+/* Botones */
 
-.menutitnav {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: white;
-  letter-spacing: 0.1rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  margin: 0%;
-  cursor: pointer;
-  display: flex; /* Usar flexbox para una distribución más flexible */
+.hero-buttons {
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
+  gap: 1.2rem;
+  margin: 0vh 30vh 0vh 0vh;
+
 }
 
-.menutitnav:hover {
+.btn-primarys,
+.btn-secondarys {
+  padding: 3px 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Principal */
+
+.btn-primarys {
+  background-color: #c39bd3e1;
+  color: #fff;
+  border: 2px solid #c39bd3;
+}
+
+.btn-primarys:hover {
+  transform: translateY(-3px);
+  opacity: 0.85;
+  background-color: rgb(240, 201, 253);
+
   color: #c39bd3;
 }
 
-.divi {
-  padding: 0 9%;
+/* Secundario */
+
+.btn-secondarys {
+  background-color: #c39bd3e1;
+  color: #fff;
+  border: 2px solid #c39bd3;
 }
 
-/* Responsive Design */
+.btn-secondarys:hover {
+  background-color: white;
+  color: #333;
+  transform: translateY(-3px);
+}
 
-/* Dispositivos móviles */
-@media screen and (max-width: 599px) {
+/* Scroll suave */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .hero-content {
+    padding: 0 6%;
+  }
+
   .portatitu {
-    padding-left: 0; /* Eliminar padding adicional si es necesario */
+    font-size: 2.4rem;
   }
 
-  .portada {
-    padding-left: 5%; /* Ajustar padding si es necesario */
+  .portatitu2 {
+    font-size: 1.3rem;
   }
 
-  .menutit {
-    font-size: 1rem; /* Tamaño de fuente reducido */
-    margin: 0 0.5rem; /* Ajuste del margen */
-  }
-}
-
-/* Tablets y dispositivos medianos */
-@media screen and (min-width: 600px) and (max-width: 899px) {
-  .portatitu {
-    max-width: 80%;
+  .portatitu3 {
+    font-size: 0.85rem;
+    letter-spacing: 1px;
   }
 
-  .menutit {
-    font-size: 1.1rem;
-    margin: 0 0.75rem;
+  .hero-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
   }
-}
 
-/* Dispositivos grandes */
-@media screen and (min-width: 900px) {
-  .menutit {
-    font-size: 1.2rem;
-    margin: 0 1rem;
+  .btn-primary,
+  .btn-secondary {
+    width: 80%;
+    text-align: center;
   }
 }
-
-/* Extra: Mejoras para la imagen de fondo en pantallas muy grandes */

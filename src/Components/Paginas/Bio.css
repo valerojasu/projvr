@@ -38,7 +38,7 @@
 
 /* Estilo de la foto */
 .foto {
-  max-width: 80%;
+  max-width: 100%;
   height: auto;
   object-fit: cover;
   border-radius: 10px;
