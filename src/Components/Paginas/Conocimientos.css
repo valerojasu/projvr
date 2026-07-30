@@ -1,106 +1,115 @@
-/* Contenedor general */
 .conocimientos-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: auto;
-  padding: 4% 5%; /* Reducido el padding en pantallas pequeñas */
+  padding: 5% 8%;
   background-color: #f4f4f4;
   text-align: center;
 }
 
-/* Encabezado */
 .conocimientos-header {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .conotext {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 600;
   color: #333;
-  margin-bottom: 2rem;
+  margin: 0;
 }
 
-.conop {
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: #333;
-  margin-bottom: 1rem;
-}
-
-/* Grid para los logotipos */
-.conocimientos-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 2rem;
-  justify-items: center;
-  width: 100%;
-  margin-top: 2rem;
-}
-
-/* Tarjetas de tecnología */
-.tech-card {
+/* Tecnologías */
+.tech-list {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  text-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  max-width: 900px;
 }
 
-/* Estilo de los logotipos */
-.loguito {
-  width: 80%;
-  max-width: 100px;
-  max-height: auto;
-  margin-bottom: 10px;
-  transition: transform 0.3s ease-in-out;
+.tech-pill {
+  padding: 12px 25px;
+  border-radius: 30px;
+  background-color: white;
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 500;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
 }
 
-.loguito:hover {
-  transform: scale(1.1);
+.tech-pill:hover {
+  transform: translateY(-5px);
 }
 
-/* Pantallas medianas y grandes */
+/* Tablet */
 @media (max-width: 900px) {
   .conotext {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
 
-  .conop {
-    font-size: 1.2rem;
-  }
-
-  .loguito {
-    width: 60%;
-    max-width: 100px;
-  }
-
-  /* En pantallas medianas, reducir el espaciado entre las tarjetas */
-  .conocimientos-grid {
-    gap: 1rem;
+  .tech-pill {
+    font-size: 1rem;
+    padding: 10px 20px;
   }
 }
 
-/* Pantallas pequeñas */
+/* Mobile */
 @media (max-width: 600px) {
+  .conocimientos-container {
+    padding: 10% 5%;
+  }
+
   .conotext {
-    margin-top: 10%; /* Ajuste de espacio superior */
-    font-size: 1.3rem;
+    font-size: 1.7rem;
   }
 
-  .conop {
-    font-size: 1rem;
+  .tech-list {
+    gap: 0.8rem;
   }
 
-  .loguito {
-    width: 50%;
-    max-width: 90px;
+  .tech-pill {
+    font-size: 0.95rem;
+    padding: 9px 18px;
   }
+}
 
-  /* En pantallas pequeñas, las tarjetas deben estar en una sola columna */
-  .conocimientos-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
+.hero-buttons {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 2.5rem;
+  justify-content: center;
+}
+
+.btn-primary {
+  padding: 14px 32px;
+  border-radius: 30px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+}
+
+.btn-secondary {
+  padding: 14px 32px;
+  border-radius: 30px;
+  border: 2px solid #333;
+  color: #333;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #333;
+  color: white;
 }

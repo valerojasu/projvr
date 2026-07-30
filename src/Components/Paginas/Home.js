@@ -20,13 +20,22 @@ const Home = () => {
           I build fast, modern websites for small businesses and entrepreneurs.
         </h1>
         <h2 className="portatitu3">
-          <strong> Responsive • Modern Performance-focused </strong>
+          <strong> Responsive • User-focused • Performance-driven </strong>
         </h2>
+        <div className="hero-buttons">
+  <a href="#projects" className="btn-primary">
+    My Projects
+  </a>
+
+  <a href="#contact" className="btn-secondary">
+    Contact Me
+  </a>
+</div>
       </div>
 
-      <Bio />
       <Conocimientos />
       <Work />
+      <Bio />
       <Formulario />
       <Footerp />
     </div>

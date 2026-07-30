@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import './Navb.css';
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import "./Navb.css";
 import v from "../../assets/V/v6.png";
 
 const Navb = ({ page }) => {
@@ -9,32 +9,36 @@ const Navb = ({ page }) => {
   // Manejar el scroll para agregar la clase 'scrolled' al navbar
   useEffect(() => {
     const handleScroll = () => {
-      const navbar = document.querySelector('.navbar');
+      const navbar = document.querySelector(".navbar");
       if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
+        navbar.classList.add("scrolled");
       } else {
-        navbar.classList.remove('scrolled');
+        navbar.classList.remove("scrolled");
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
-    <div className={`navbar ${page === 'about' ? 'navbar-about' : 'navbar-home'}`}>
+    <div
+      className={`navbar ${page === "about" ? "navbar-about" : "navbar-home"}`}
+    >
       <div className="container-fluid">
-        <Link to='/Mainp'>
-          <img src={v} alt="logo" className='logov' />
+        <Link to="/Mainp">
+          <img src={v} alt="logo" className="logov" />
         </Link>
 
-        <ul className={`nav ${isMenuOpen ? 'active' : ''}`}>
+        <ul className={`nav ${isMenuOpen ? "active" : ""}`}>
           <div className="menuitem">
             <li className="nav-item">
-              <Link className="menutinav" to='/Home'>Inicio</Link>
+              <Link className="menutinav" to="/Home">
+                Inicio
+              </Link>
             </li>
             {/* Puedes agregar más enlaces aquí */}
           </div>
@@ -51,5 +55,3 @@ const Navb = ({ page }) => {
 };
 
 export default Navb;
-
-

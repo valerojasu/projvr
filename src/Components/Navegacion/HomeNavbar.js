@@ -24,6 +24,43 @@ const HomeNavbar = () => {
           <img src={v} alt="logo" className="logov" />
         </Link>
 
+        <div className={`nav-links ${menuOpen ? "active" : ""}`}>
+          <Link
+            className="menutinav"
+            to="/about"
+            onClick={() => setMenuOpen(false)}
+          >
+            Services
+          </Link>
+        </div>
+        <div className={`nav-links ${menuOpen ? "active" : ""}`}>
+          <Link
+            className="menutinav"
+            to="/about"
+            onClick={() => setMenuOpen(false)}
+          >
+            Work
+          </Link>
+        </div>
+        <div className={`nav-links ${menuOpen ? "active" : ""}`}>
+          <Link
+            className="menutinav"
+            to="/about"
+            onClick={() => setMenuOpen(false)}
+          >
+            Contact
+          </Link>
+        </div>
+        <div className={`nav-links ${menuOpen ? "active" : ""}`}>
+          <Link
+            className="menutinav"
+            to="/about"
+            onClick={() => setMenuOpen(false)}
+          >
+            ES
+          </Link>
+        </div>
+
         <div
           className={`hamburger ${menuOpen ? "open" : ""}`}
           onClick={toggleMenu}
