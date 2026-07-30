@@ -15,9 +15,10 @@ const Home = () => {
         <HomeNavbar />
         <h1 className="portatitu">
           <strong>Hi, I'm Valeria Rojas</strong>
-          <br />
-          FULL STACK DEVELOPER
-          <br />I build modern and responsive websites and web applications.
+        </h1>
+        <h1 className="portatitu2">
+          {" "}
+          I build fast, modern websites for small businesses and entrepreneurs.
         </h1>
       </div>
 

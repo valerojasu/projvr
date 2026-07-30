@@ -9,8 +9,6 @@ import Navb from "./Components/Navegacion/Navb";
 const App = () => {
   return (
     <Router>
-      <Navb />
-
       <Routes>
         {/* Página principal */}
         <Route path="/" element={<Home />} />
